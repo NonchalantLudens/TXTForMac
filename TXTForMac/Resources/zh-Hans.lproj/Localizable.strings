@@ -113,3 +113,7 @@
 "menu.file.openRecent" = "打开最近使用";
 "menu.file.openRecent.empty" = "无最近使用的文件";
 "menu.file.openRecent.clear" = "清除菜单";
+
+/* 标签与关闭 */
+"menu.file.closeTab" = "关闭标签";
+"menu.file.closeWindow" = "关闭窗口";

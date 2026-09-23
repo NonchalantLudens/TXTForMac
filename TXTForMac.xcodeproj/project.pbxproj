@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004B7D3471A1E53A8CDCAD26 /* SessionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF3A6D4FDB675CB2F61762 /* SessionStoreTests.swift */; };
 		0F7CDE77EC9BD8F4F676B0BB /* EditorRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361733DB85DE6C4F2FFDBC9 /* EditorRepresentables.swift */; };
 		197F73E3B0AD3340AE785C7A /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF804B0DA5AF9405ADCED1C7 /* Workspace.swift */; };
 		1B242ABEF7CEC8F262E757FE /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9454EAA4112237B15F45356 /* Document.swift */; };
@@ -15,6 +16,7 @@
 		27E0A1113878234F3813DD9E /* LineEnding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F774DF9F323B846C9F363 /* LineEnding.swift */; };
 		329FED6A7316EA514977393A /* LineEndingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F507D3AFDFC4A0ED2BA0780 /* LineEndingTests.swift */; };
 		382EE32A0BD64EE8F610CA5E /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */; };
+		42B9E5B6715F93426391ECCA /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D2285C9E3D777875C625E /* SessionStore.swift */; };
 		4AA04A9F017E650672710820 /* FindBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282A5A26CFA10E39D6CD99C /* FindBarView.swift */; };
 		4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13818D882E9FEEEFA229281 /* Assets.xcassets */; };
 		50B48DDBD07F180ECC005009 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F778C53D2354E0993FFC196 /* Localizable.strings */; };
@@ -24,6 +26,7 @@
 		76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA814458D884384A65D0761 /* SettingsSchema.swift */; };
 		7991CCA50111F019210B3903 /* FileIOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EB0E102AFE2CFA9B9CFD2 /* FileIOServiceTests.swift */; };
 		84838F6ED292F0A785A12F1C /* TextViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0042E326FA259538278E7B /* TextViewFactory.swift */; };
+		8874DE0312BC215E9A82897D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47DF5088F1E187A05943F42 /* TabBarView.swift */; };
 		8C39E4AD6AB88C1F50CE74CF /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */; };
 		8E71E6DB2B72E95A084F0501 /* Workspace+Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB9A8650DF8ABEB87992F5 /* Workspace+Find.swift */; };
 		8F712A6036AF39D252C82994 /* ValueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B0D3B84C795962E222E3F /* ValueTypes.swift */; };
@@ -43,6 +46,7 @@
 		DC6ED1241D150583C2668000 /* EncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F9A567925035C0AFAB62F /* EncodingDetector.swift */; };
 		E489CD5A7C6F76019E4F774A /* TextSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2465181D6EF5AC97023A4C2 /* TextSearch.swift */; };
 		E4FDBE13B2C1DA4762FAFE8D /* LocalizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */; };
+		EF17FC4ABDBCC16504080F08 /* Workspace+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E159CEDFCAC2048C65A17 /* Workspace+Session.swift */; };
 		EF8F7A66DAAA92AFE605FD9E /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FAC85C527B2C176FCCF8A /* StatusBarView.swift */; };
 		F6A9565005B3990C0624EC7D /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EF2D25B63A38F3DD007298 /* UIConstants.swift */; };
 		FC3ECD5C5EA8AED1657CB44F /* EditorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA2674524F738F5B4B2A24 /* EditorTheme.swift */; };
@@ -89,6 +93,8 @@
 		A9454EAA4112237B15F45356 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationServiceTests.swift; sourceTree = "<group>"; };
 		AB78511083C65F4EED392A59 /* TextEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEncoding.swift; sourceTree = "<group>"; };
+		AE9D2285C9E3D777875C625E /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		C8CF3A6D4FDB675CB2F61762 /* SessionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStoreTests.swift; sourceTree = "<group>"; };
 		C8FA2674524F738F5B4B2A24 /* EditorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTheme.swift; sourceTree = "<group>"; };
 		C98B0D3B84C795962E222E3F /* ValueTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTypes.swift; sourceTree = "<group>"; };
 		CC2571BF8165B3C0A852285C /* WorkspaceRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceRegistry.swift; sourceTree = "<group>"; };
@@ -100,8 +106,10 @@
 		DF804B0DA5AF9405ADCED1C7 /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 		E2465181D6EF5AC97023A4C2 /* TextSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearch.swift; sourceTree = "<group>"; };
 		E3215CF17464B3A3A2BDE195 /* EncodingCorpus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingCorpus.swift; sourceTree = "<group>"; };
+		E86E159CEDFCAC2048C65A17 /* Workspace+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workspace+Session.swift"; sourceTree = "<group>"; };
 		EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		F13818D882E9FEEEFA229281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47DF5088F1E187A05943F42 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F6BC84FE20936F027185C1EE /* Workspace+Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workspace+Files.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +122,7 @@
 				802EB0E102AFE2CFA9B9CFD2 /* FileIOServiceTests.swift */,
 				2F507D3AFDFC4A0ED2BA0780 /* LineEndingTests.swift */,
 				A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */,
+				C8CF3A6D4FDB675CB2F61762 /* SessionStoreTests.swift */,
 				9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */,
 				3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */,
 				5B04E755D21B7A1E11AD3FA2 /* TextEncodingTests.swift */,
@@ -185,6 +194,7 @@
 				6089C99529980AB4B0D5201C /* Models */,
 				DF8E291C0C5282D9111DE6D8 /* Resources */,
 				BFA2F4A26A74A8E7A01C696E /* Services */,
+				FA90DFA6397FE5138AC46724 /* Tabs */,
 			);
 			path = TXTForMac;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 				6A6F9A567925035C0AFAB62F /* EncodingDetector.swift */,
 				4F5E5B2536A7CB0994FC88DD /* FileIOService.swift */,
 				066278ACA50BFA8E4819B610 /* LocalizationService.swift */,
+				AE9D2285C9E3D777875C625E /* SessionStore.swift */,
 				EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */,
 				E2465181D6EF5AC97023A4C2 /* TextSearch.swift */,
 			);
@@ -221,9 +232,18 @@
 				76FA4E5543FA615A79C6289B /* Workspace+Close.swift */,
 				F6BC84FE20936F027185C1EE /* Workspace+Files.swift */,
 				A7BB9A8650DF8ABEB87992F5 /* Workspace+Find.swift */,
+				E86E159CEDFCAC2048C65A17 /* Workspace+Session.swift */,
 				CC2571BF8165B3C0A852285C /* WorkspaceRegistry.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		FA90DFA6397FE5138AC46724 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				F47DF5088F1E187A05943F42 /* TabBarView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +348,7 @@
 				7991CCA50111F019210B3903 /* FileIOServiceTests.swift in Sources */,
 				329FED6A7316EA514977393A /* LineEndingTests.swift in Sources */,
 				E4FDBE13B2C1DA4762FAFE8D /* LocalizationServiceTests.swift in Sources */,
+				004B7D3471A1E53A8CDCAD26 /* SessionStoreTests.swift in Sources */,
 				8C39E4AD6AB88C1F50CE74CF /* SettingsStoreTests.swift in Sources */,
 				382EE32A0BD64EE8F610CA5E /* TestSupport.swift in Sources */,
 				C43FC9218275DB483037488F /* TextEncodingTests.swift in Sources */,
@@ -353,10 +374,12 @@
 				27E0A1113878234F3813DD9E /* LineEnding.swift in Sources */,
 				BFA2EC9B5D5CF41304430D0A /* LocalizationService.swift in Sources */,
 				D636CE7604CE7BA7B7658598 /* SaveOptions.swift in Sources */,
+				42B9E5B6715F93426391ECCA /* SessionStore.swift in Sources */,
 				76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */,
 				1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */,
 				EF8F7A66DAAA92AFE605FD9E /* StatusBarView.swift in Sources */,
 				A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */,
+				8874DE0312BC215E9A82897D /* TabBarView.swift in Sources */,
 				A45B0A834D700D8435AC3037 /* TextEncoding.swift in Sources */,
 				E489CD5A7C6F76019E4F774A /* TextSearch.swift in Sources */,
 				84838F6ED292F0A785A12F1C /* TextViewFactory.swift in Sources */,
@@ -366,6 +389,7 @@
 				5B35848E0E80B6C00512614F /* Workspace+Close.swift in Sources */,
 				56A510CEE0C2F35EA9DDC9A0 /* Workspace+Files.swift in Sources */,
 				8E71E6DB2B72E95A084F0501 /* Workspace+Find.swift in Sources */,
+				EF17FC4ABDBCC16504080F08 /* Workspace+Session.swift in Sources */,
 				197F73E3B0AD3340AE785C7A /* Workspace.swift in Sources */,
 				92C98064F819312737B5EAE1 /* WorkspaceRegistry.swift in Sources */,
 			);

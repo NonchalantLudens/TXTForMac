@@ -26,11 +26,16 @@ final class Workspace: NSObject {
     /// 顶部提示条（T-016）
     var banner: Banner?
     private(set) var showStatusBar = SettingsStore.shared.settings.showStatusBar
+    private(set) var showTabBar = SettingsStore.shared.settings.showTabBar
 
     // MARK: 查找会话（T-017/T-018/T-019）
 
     let find = FindSession()
     var findMode: FindMode?
+
+    // MARK: 自动保存（T-030）
+
+    var autosaveTimer: Timer?
 
     enum Banner: Equatable {
         case largeFileWarning(byteCount: Int)

@@ -16,6 +16,14 @@ struct WindowRootView: View {
                 FindBarView(find: workspace.find, workspace: workspace)
                     .id(findMode)
             }
+            if workspace.showTabBar, !workspace.store.isEmpty {
+                TabBarView(store: workspace.store) { index in
+                    workspace.store.select(index: index)
+                    workspace.refreshStatusMetrics()
+                } onClose: { index in
+                    workspace.closeTab(at: index)
+                }
+            }
             editorArea
             if workspace.showStatusBar {
                 StatusBarView(workspace: workspace)
@@ -39,6 +47,10 @@ struct WindowRootView: View {
             }
         )
         .focusedSceneValue(\.commandRouter, workspace)
+        .onAppear {
+            workspace.startAutosave()
+            workspace.restoreSessionIfNeeded()
+        }
         .onChange(of: localization.language) { _ in
             workspace.refreshStatusMetrics()
         }

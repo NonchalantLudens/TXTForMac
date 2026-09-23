@@ -33,6 +33,14 @@ struct AppCommands: Commands {
             .keyboardShortcut("o")
         }
 
+        CommandGroup(after: .newItem) {
+            Button(LocalizationSnapshot.string("menu.file.closeTab")) {
+                router?.closeCurrentTab()
+            }
+            .keyboardShortcut("w", modifiers: [.command, .shift])
+            .disabled(router?.store.isEmpty ?? true)
+        }
+
         CommandGroup(replacing: .saveItem) {
             Button(LocalizationSnapshot.string("menu.file.save")) {
                 router?.saveCurrent()

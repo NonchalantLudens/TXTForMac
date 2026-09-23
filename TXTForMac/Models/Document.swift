@@ -101,6 +101,14 @@ final class Document: Identifiable {
         savedCharacterCount = text.count
     }
 
+    /// 会话恢复：还原编码/换行符/BOM 状态并标记脏（内容经 replaceWholeText 写入）。
+    func restoreState(encoding: TextEncoding, lineEnding: LineEnding, hasBOM: Bool) {
+        self.encoding = encoding
+        self.lineEnding = lineEnding
+        self.hasBOM = hasBOM
+        isDirty = true
+    }
+
     /// 就地转换换行符并标记脏。
     func convertLineEnding(to target: LineEnding) {
         guard target != lineEnding else { return }
