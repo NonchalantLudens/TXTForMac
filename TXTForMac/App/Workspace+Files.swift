@@ -18,6 +18,7 @@ extension Workspace {
     }
 
     func open(url: URL) {
+        noteRecentFile(at: url)
         do {
             let loaded = try FileIOService.read(
                 at: url,

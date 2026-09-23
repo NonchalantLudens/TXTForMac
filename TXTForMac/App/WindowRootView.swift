@@ -12,10 +12,20 @@ struct WindowRootView: View {
                     workspace.dismissBanner()
                 }
             }
+            if workspace.findBarIsVisible, let findMode = workspace.findMode {
+                FindBarView(find: workspace.find, workspace: workspace)
+                    .id(findMode)
+            }
             editorArea
             if workspace.showStatusBar {
                 StatusBarView(workspace: workspace)
             }
+        }
+        .onOpenURL { url in
+            workspace.open(url: url)
+        }
+        .onDrop(of: [.fileURL], isTargeted: nil) { providers in
+            handleDrop(providers)
         }
         .frame(
             minWidth: WindowRootView.minimumWindowSize.width,
@@ -36,6 +46,21 @@ struct WindowRootView: View {
 
     /// 最小窗口尺寸，对齐 devplaybook/PROJECT/UI_STYLE.md。
     static let minimumWindowSize = CGSize(width: 480, height: 320)
+
+    /// 拖放打开（T-025）：多个文件各自开标签。
+    private func handleDrop(_ providers: [NSItemProvider]) -> Bool {
+        var accepted = false
+        for provider in providers where provider.hasItemConformingToTypeIdentifier("public.file-url") {
+            accepted = true
+            _ = provider.loadObject(ofClass: URL.self) { [workspace] url, _ in
+                guard let url else { return }
+                Task { @MainActor in
+                    workspace.open(url: url)
+                }
+            }
+        }
+        return accepted
+    }
 
     @ViewBuilder
     private var editorArea: some View {

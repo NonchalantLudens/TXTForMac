@@ -27,6 +27,11 @@ final class Workspace: NSObject {
     var banner: Banner?
     private(set) var showStatusBar = SettingsStore.shared.settings.showStatusBar
 
+    // MARK: 查找会话（T-017/T-018/T-019）
+
+    let find = FindSession()
+    var findMode: FindMode?
+
     enum Banner: Equatable {
         case largeFileWarning(byteCount: Int)
     }
@@ -65,8 +70,23 @@ final class Workspace: NSObject {
         boundWindowID = ObjectIdentifier(window)
         self.window = window
         window.delegate = self
+        WorkspaceRegistry.shared.register(self, for: window)
         refreshStatusMetrics()
         refreshWindowEditedFlag()
+    }
+
+    /// 记录最近文件（T-024）：去重、上限来自设置。
+    func noteRecentFile(at url: URL) {
+        let path = url.path
+        settings.update { settings in
+            var recents = settings.recentFiles.filter { $0 != path }
+            recents.insert(path, at: 0)
+            let limit = max(settings.recentFilesLimit, 0)
+            if recents.count > limit {
+                recents = Array(recents.prefix(limit))
+            }
+            settings.recentFiles = recents
+        }
     }
 
     // MARK: 文档命令

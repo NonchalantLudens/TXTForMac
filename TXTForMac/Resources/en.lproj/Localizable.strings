@@ -82,3 +82,34 @@
 "error.undecodable" = "The file cannot be decoded as %@.";
 "error.unencodable" = "The text cannot be represented in %@.";
 "error.writeFailed" = "Saving failed: %@";
+
+/* 查找与替换 */
+"menu.find" = "Find";
+"menu.find.find" = "Find…";
+"menu.find.next" = "Find Next";
+"menu.find.previous" = "Find Previous";
+"menu.find.replace" = "Replace…";
+"menu.find.goToLine" = "Go to Line…";
+"find.placeholder" = "Find";
+"find.replacementPlaceholder" = "Replace with";
+"find.replace" = "Replace";
+"find.replaceAll" = "Replace All";
+"find.close" = "Close";
+"find.caseSensitive" = "Match Case";
+"find.wholeWord" = "Whole Words";
+"find.regex" = "Regular Expression";
+"find.invalidQuery" = "Invalid query";
+"find.noMatches" = "Not found";
+"find.matchIndex" = "%ld of %ld";
+"find.matchTotal" = "%ld results";
+
+/* 转到行 */
+"goto.label" = "Go to line:";
+"goto.placeholder" = "Line number";
+"goto.invalidInput" = "Please enter a valid line number.";
+"goto.outOfRange" = "Line %ld does not exist in this document.";
+
+/* 最近文件 */
+"menu.file.openRecent" = "Open Recent";
+"menu.file.openRecent.empty" = "No Recent Files";
+"menu.file.openRecent.clear" = "Clear Menu";

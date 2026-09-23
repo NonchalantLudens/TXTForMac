@@ -27,4 +27,11 @@ struct TXTForMacApp: App {
 }
 
 /// AppKit 生命周期挂点：注册服务提供者等（M5 扩展）。
-final class AppDelegate: NSObject, NSApplicationDelegate {}
+final class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidBecomeActive(_: Notification) {
+        // SwiftUI 菜单栏就绪后注入「打开最近文件」子菜单
+        DispatchQueue.main.async {
+            RecentFilesMenuController.shared.installIfNeeded()
+        }
+    }
+}

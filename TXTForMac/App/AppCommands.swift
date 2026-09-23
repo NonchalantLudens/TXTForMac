@@ -98,6 +98,37 @@ struct AppCommands: Commands {
             .keyboardShortcut(KeyEquivalent("\u{F708}"), modifiers: [])
         }
 
+        CommandMenu(LocalizationSnapshot.string("menu.find")) {
+            Button(LocalizationSnapshot.string("menu.find.find")) {
+                router?.beginFind()
+            }
+            .keyboardShortcut("f")
+
+            Button(LocalizationSnapshot.string("menu.find.next")) {
+                router?.findNext(direction: 1)
+            }
+            .keyboardShortcut("g")
+
+            Button(LocalizationSnapshot.string("menu.find.previous")) {
+                router?.findNext(direction: -1)
+            }
+            .keyboardShortcut("g", modifiers: [.command, .shift])
+
+            Divider()
+
+            Button(LocalizationSnapshot.string("menu.find.replace")) {
+                router?.beginReplace()
+            }
+            .keyboardShortcut("f", modifiers: [.command, .option])
+
+            Divider()
+
+            Button(LocalizationSnapshot.string("menu.find.goToLine")) {
+                router?.beginGoToLine()
+            }
+            .keyboardShortcut("l")
+        }
+
         CommandMenu(LocalizationSnapshot.string("menu.format")) {
             Button(LocalizationSnapshot.string("menu.format.wordWrap")) {
                 router?.toggleWordWrap()

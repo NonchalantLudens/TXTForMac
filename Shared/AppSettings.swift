@@ -69,6 +69,11 @@ struct AppSettings: Codable, Equatable, Sendable {
     /// 插入时间日期（F5）的格式串
     var timeDateFormat: String = "yyyy/M/d HH:mm"
 
+    // MARK: 最近文件
+
+    /// 最近打开的文件绝对路径（新的在前），上限由 recentFilesLimit 控制
+    var recentFiles: [String] = []
+
     // MARK: 结构版本
 
     /// 读入历史配置时可能小于 `SettingsSchema.schemaVersion`
