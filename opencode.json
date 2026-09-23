@@ -1,0 +1,4 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["devplaybook/STANDARDS/GLOBAL-CONSTRAINTS.md", "devplaybook/STANDARDS/CONSTRAINTS-STACK/macos.md"]
+}

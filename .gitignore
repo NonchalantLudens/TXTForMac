@@ -1,0 +1,33 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+
+# xcodegen 生成物（保留 .xcodeproj 入库，其余中间产物忽略）
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# 发布产物与密钥
+dist/
+*.dmg
+*.zip
+*.pkg
+sparkle_private_key
+*.pem
+appcast-worktree/
+
+# 工作流临时文件
+.tmp/
+
+# 系统
+.DS_Store
