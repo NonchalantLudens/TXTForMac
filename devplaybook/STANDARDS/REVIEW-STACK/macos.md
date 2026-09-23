@@ -1,1 +1,0 @@
-/Users/fang/dev-playbook/profiles/macos/REVIEW.md

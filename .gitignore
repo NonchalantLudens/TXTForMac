@@ -29,5 +29,14 @@ appcast-worktree/
 # 工作流临时文件
 .tmp/
 
+# devplaybook 工作流文件（本地专用，不随公开仓库分发；symlink 指向本机中央库）
+AGENTS.md
+CLAUDE.md
+PROGRESS.md
+opencode.json
+devplaybook/
+.devplaybook-profile
+.devplaybook-version
+
 # 系统
 .DS_Store

@@ -1,1 +1,0 @@
-/Users/fang/dev-playbook/standards/check_constraints.sh

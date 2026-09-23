@@ -1,1 +1,0 @@
-/Users/fang/dev-playbook/standards/NO-SHORTCUT-CONSTRAINTS.md
