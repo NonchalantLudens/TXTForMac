@@ -11,8 +11,8 @@ struct AppSettings: Codable, Equatable, Sendable {
     var launchBehavior: LaunchBehavior = .restoreLastSession
     var defaultNewFileName: String = "Untitled"
     var defaultFileExtension: String = "txt"
-    var defaultEncoding: EncodingIdentifier = .utf8
-    var defaultLineEnding: LineEndingIdentifier = .lf
+    var defaultEncoding: TextEncoding = .utf8
+    var defaultLineEnding: LineEnding = .lf
 
     // MARK: 编辑
 
@@ -152,10 +152,10 @@ struct AppSettings: Codable, Equatable, Sendable {
             String.self, forKey: .defaultFileExtension
         ) ?? target.defaultFileExtension
         target.defaultEncoding = try container.decodeIfPresent(
-            EncodingIdentifier.self, forKey: .defaultEncoding
+            TextEncoding.self, forKey: .defaultEncoding
         ) ?? target.defaultEncoding
         target.defaultLineEnding = try container.decodeIfPresent(
-            LineEndingIdentifier.self, forKey: .defaultLineEnding
+            LineEnding.self, forKey: .defaultLineEnding
         ) ?? target.defaultLineEnding
     }
 
