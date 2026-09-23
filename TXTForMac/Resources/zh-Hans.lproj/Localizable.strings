@@ -175,3 +175,6 @@
 "settings.finderStatus" = "扩展状态";
 "settings.finderStatus.enabled" = "已启用";
 "settings.finderStatus.disabled" = "未启用 —— 请到系统设置中开启";
+
+/* 应用菜单 */
+"menu.app.checkUpdates" = "检查更新…";

@@ -175,3 +175,6 @@
 "settings.finderStatus" = "Extension status";
 "settings.finderStatus.enabled" = "Enabled";
 "settings.finderStatus.disabled" = "Not enabled — enable it in System Settings";
+
+/* 应用菜单 */
+"menu.app.checkUpdates" = "Check for Updates…";

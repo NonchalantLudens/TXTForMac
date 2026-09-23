@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		004B7D3471A1E53A8CDCAD26 /* SessionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF3A6D4FDB675CB2F61762 /* SessionStoreTests.swift */; };
+		037F39AF7C16DB6C5CB18826 /* UpdaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FD486F76029D50A971649 /* UpdaterService.swift */; };
 		07E3D661B61851303B5FF2C3 /* SettingsSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA814458D884384A65D0761 /* SettingsSchema.swift */; };
 		0F7CDE77EC9BD8F4F676B0BB /* EditorRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361733DB85DE6C4F2FFDBC9 /* EditorRepresentables.swift */; };
 		17588980138B10B4C4813E14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A705BE33907F11799FCF83 /* InfoPlist.strings */; };
 		197F73E3B0AD3340AE785C7A /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF804B0DA5AF9405ADCED1C7 /* Workspace.swift */; };
 		1B242ABEF7CEC8F262E757FE /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9454EAA4112237B15F45356 /* Document.swift */; };
 		1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */; };
+		23B3AD6B67AE477A50DB39B9 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 204A9806DAE538B8402BEA0B /* Sparkle */; };
 		24FF134EB93D2B1256CA7336 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682601CC06417482618F760D /* AppSettings.swift */; };
 		278EE7C35490737B6BE26B9E /* TextSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0CD7431CEC3A738076C94 /* TextSearchTests.swift */; };
 		27E0A1113878234F3813DD9E /* LineEnding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F774DF9F323B846C9F363 /* LineEnding.swift */; };
@@ -102,6 +104,7 @@
 		04DBE748C4A4CFC8B54FC9A9 /* EditorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCoordinator.swift; sourceTree = "<group>"; };
 		066278ACA50BFA8E4819B610 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 		184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTForMacApp.swift; sourceTree = "<group>"; };
+		208FD486F76029D50A971649 /* UpdaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdaterService.swift; sourceTree = "<group>"; };
 		214F774DF9F323B846C9F363 /* LineEnding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineEnding.swift; sourceTree = "<group>"; };
 		2F507D3AFDFC4A0ED2BA0780 /* LineEndingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineEndingTests.swift; sourceTree = "<group>"; };
 		3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
@@ -155,6 +158,17 @@
 		F47DF5088F1E187A05943F42 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F6BC84FE20936F027185C1EE /* Workspace+Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workspace+Files.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99CD2910564B8BA464A4075F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B3AD6B67AE477A50DB39B9 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1A23212EF030DE0E575831E9 /* Settings */ = {
@@ -274,6 +288,7 @@
 				AE9D2285C9E3D777875C625E /* SessionStore.swift */,
 				EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */,
 				E2465181D6EF5AC97023A4C2 /* TextSearch.swift */,
+				208FD486F76029D50A971649 /* UpdaterService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -329,6 +344,7 @@
 			buildPhases = (
 				1ACAD66C92C42ABFA812B952 /* Sources */,
 				E266CB786DDE7B8AD37415AD /* Resources */,
+				99CD2910564B8BA464A4075F /* Frameworks */,
 				2346A60B6BD38BED42223506 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -338,6 +354,7 @@
 			);
 			name = TXTForMac;
 			packageProductDependencies = (
+				204A9806DAE538B8402BEA0B /* Sparkle */,
 			);
 			productName = TXTForMac;
 			productReference = 60BF3A1C103DEA63A9473C67 /* TXTForMac.app */;
@@ -413,6 +430,9 @@
 			);
 			mainGroup = 63AE002610295E027C38CBF0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C2365F4CC268C4A5CFA4FA8 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9DDADDCF8E418BF502E97629 /* Products */;
 			projectDirPath = "";
@@ -495,6 +515,7 @@
 				E489CD5A7C6F76019E4F774A /* TextSearch.swift in Sources */,
 				84838F6ED292F0A785A12F1C /* TextViewFactory.swift in Sources */,
 				F6A9565005B3990C0624EC7D /* UIConstants.swift in Sources */,
+				037F39AF7C16DB6C5CB18826 /* UpdaterService.swift in Sources */,
 				8F712A6036AF39D252C82994 /* ValueTypes.swift in Sources */,
 				B6EA8A1002D8424CC36403CF /* WindowRootView.swift in Sources */,
 				5B35848E0E80B6C00512614F /* Workspace+Close.swift in Sources */,
@@ -851,6 +872,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C2365F4CC268C4A5CFA4FA8 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		204A9806DAE538B8402BEA0B /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2365F4CC268C4A5CFA4FA8 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA32BC9483054B5EEC825302 /* Project object */;
 }
