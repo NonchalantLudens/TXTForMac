@@ -172,3 +172,6 @@
 "settings.currentVersion" = "当前版本";
 "about.license" = "版权所有 (c) 2026 NonchalantLudens\n\n特此免费授予任何获得本软件及相关文档文件（“软件”）副本的人使用、复制、修改、合并、出版、发行、再许可和/或销售软件副本的权利，并允许向其提供本软件的人这样做，但须符合以下条件：\n\n本软件按“现状”提供，不附带任何明示或默示的保证，包括但不限于适销性、特定用途适用性和不侵权的保证。在任何情况下，作者均不对任何索赔、损害或其他责任负责。";
 "about.openRepository" = "打开 GitHub 仓库";
+"settings.finderStatus" = "扩展状态";
+"settings.finderStatus.enabled" = "已启用";
+"settings.finderStatus.disabled" = "未启用 —— 请到系统设置中开启";

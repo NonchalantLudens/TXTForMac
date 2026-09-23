@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		004B7D3471A1E53A8CDCAD26 /* SessionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF3A6D4FDB675CB2F61762 /* SessionStoreTests.swift */; };
+		07E3D661B61851303B5FF2C3 /* SettingsSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA814458D884384A65D0761 /* SettingsSchema.swift */; };
 		0F7CDE77EC9BD8F4F676B0BB /* EditorRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361733DB85DE6C4F2FFDBC9 /* EditorRepresentables.swift */; };
+		17588980138B10B4C4813E14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A705BE33907F11799FCF83 /* InfoPlist.strings */; };
 		197F73E3B0AD3340AE785C7A /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF804B0DA5AF9405ADCED1C7 /* Workspace.swift */; };
 		1B242ABEF7CEC8F262E757FE /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9454EAA4112237B15F45356 /* Document.swift */; };
 		1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */; };
+		24FF134EB93D2B1256CA7336 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682601CC06417482618F760D /* AppSettings.swift */; };
 		278EE7C35490737B6BE26B9E /* TextSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0CD7431CEC3A738076C94 /* TextSearchTests.swift */; };
 		27E0A1113878234F3813DD9E /* LineEnding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F774DF9F323B846C9F363 /* LineEnding.swift */; };
+		2ED7E82A309728F409A4417C /* LineEnding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F774DF9F323B846C9F363 /* LineEnding.swift */; };
 		329FED6A7316EA514977393A /* LineEndingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F507D3AFDFC4A0ED2BA0780 /* LineEndingTests.swift */; };
 		382EE32A0BD64EE8F610CA5E /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */; };
 		42B9E5B6715F93426391ECCA /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D2285C9E3D777875C625E /* SessionStore.swift */; };
 		4AA04A9F017E650672710820 /* FindBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0282A5A26CFA10E39D6CD99C /* FindBarView.swift */; };
 		4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13818D882E9FEEEFA229281 /* Assets.xcassets */; };
 		50B48DDBD07F180ECC005009 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F778C53D2354E0993FFC196 /* Localizable.strings */; };
+		534E44544C1322B3EF18FAF0 /* FileNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D3DBC66D0126949A81E02 /* FileNaming.swift */; };
 		56A510CEE0C2F35EA9DDC9A0 /* Workspace+Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC84FE20936F027185C1EE /* Workspace+Files.swift */; };
 		5B35848E0E80B6C00512614F /* Workspace+Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FA4E5543FA615A79C6289B /* Workspace+Close.swift */; };
+		5E551374D9E2F45E485429BD /* TXTForMacFinder.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A7A1BC86C05D1C03D7586843 /* TXTForMacFinder.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C4B059880F6B039EE88C1E3 /* DocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE56641E92921B01ED0DA9 /* DocumentStore.swift */; };
 		76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA814458D884384A65D0761 /* SettingsSchema.swift */; };
+		7749F8DEEE817E7CD9348482 /* TextEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB78511083C65F4EED392A59 /* TextEncoding.swift */; };
 		7991CCA50111F019210B3903 /* FileIOServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EB0E102AFE2CFA9B9CFD2 /* FileIOServiceTests.swift */; };
 		84838F6ED292F0A785A12F1C /* TextViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0042E326FA259538278E7B /* TextViewFactory.swift */; };
+		84E06A9C5242F84EE5A9E6C3 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7761EBC63EF59E75C377B31 /* FinderSync.swift */; };
 		8874DE0312BC215E9A82897D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47DF5088F1E187A05943F42 /* TabBarView.swift */; };
 		8C39E4AD6AB88C1F50CE74CF /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */; };
 		8E71E6DB2B72E95A084F0501 /* Workspace+Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB9A8650DF8ABEB87992F5 /* Workspace+Find.swift */; };
@@ -37,14 +45,17 @@
 		9B770F641A5F7E623BD7B919 /* EncodingDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901978B99AFA764505BD165 /* EncodingDetectorTests.swift */; };
 		A45B0A834D700D8435AC3037 /* TextEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB78511083C65F4EED392A59 /* TextEncoding.swift */; };
 		A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */; };
+		B3264A44C58044569239AC69 /* FileNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D3DBC66D0126949A81E02 /* FileNaming.swift */; };
 		B6EA8A1002D8424CC36403CF /* WindowRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794509BC71163BC7664AB491 /* WindowRootView.swift */; };
 		BFA2EC9B5D5CF41304430D0A /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066278ACA50BFA8E4819B610 /* LocalizationService.swift */; };
 		BFD0C8A791D97E146848B243 /* FileIOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E5B2536A7CB0994FC88DD /* FileIOService.swift */; };
 		C0FC197A3DB2F1B5CA161CD4 /* EditorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBE748C4A4CFC8B54FC9A9 /* EditorCoordinator.swift */; };
 		C43FC9218275DB483037488F /* TextEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B04E755D21B7A1E11AD3FA2 /* TextEncodingTests.swift */; };
+		CC2E65C37D9293FDD53E60F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD18AD636B3F931BFACB6A0D /* Localizable.strings */; };
 		D636CE7604CE7BA7B7658598 /* SaveOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752143CA92B25FF821A8222C /* SaveOptions.swift */; };
 		D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */; };
 		DC6ED1241D150583C2668000 /* EncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F9A567925035C0AFAB62F /* EncodingDetector.swift */; };
+		E00D65CB76D62FE5590F3D2E /* FileNamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402D08F1D5F8EF299C28A68 /* FileNamingTests.swift */; };
 		E489CD5A7C6F76019E4F774A /* TextSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2465181D6EF5AC97023A4C2 /* TextSearch.swift */; };
 		E4FDBE13B2C1DA4762FAFE8D /* LocalizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */; };
 		EF17FC4ABDBCC16504080F08 /* Workspace+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E159CEDFCAC2048C65A17 /* Workspace+Session.swift */; };
@@ -52,9 +63,17 @@
 		F6A9565005B3990C0624EC7D /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EF2D25B63A38F3DD007298 /* UIConstants.swift */; };
 		FC3ECD5C5EA8AED1657CB44F /* EditorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA2674524F738F5B4B2A24 /* EditorTheme.swift */; };
 		FC6F11EF2E746DADF6122171 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682601CC06417482618F760D /* AppSettings.swift */; };
+		FD35769108935810AEB47EA5 /* ValueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B0D3B84C795962E222E3F /* ValueTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		88ED39E27A0597307663FEF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA32BC9483054B5EEC825302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B54DB21DBF38023C98FF92E2;
+			remoteInfo = TXTForMacFinder;
+		};
 		EB95DA8C19A9D65F42776B39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA32BC9483054B5EEC825302 /* Project object */;
@@ -64,6 +83,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2346A60B6BD38BED42223506 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5E551374D9E2F45E485429BD /* TXTForMacFinder.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0282A5A26CFA10E39D6CD99C /* FindBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBarView.swift; sourceTree = "<group>"; };
 		04DBE748C4A4CFC8B54FC9A9 /* EditorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCoordinator.swift; sourceTree = "<group>"; };
@@ -72,7 +105,9 @@
 		214F774DF9F323B846C9F363 /* LineEnding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineEnding.swift; sourceTree = "<group>"; };
 		2F507D3AFDFC4A0ED2BA0780 /* LineEndingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineEndingTests.swift; sourceTree = "<group>"; };
 		3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		4180C35F8F3F40EDF25DCCAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTForMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7172D3C2FB4B440E687BB8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4F5E5B2536A7CB0994FC88DD /* FileIOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOService.swift; sourceTree = "<group>"; };
 		4F6FAC85C527B2C176FCCF8A /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		5361733DB85DE6C4F2FFDBC9 /* EditorRepresentables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRepresentables.swift; sourceTree = "<group>"; };
@@ -89,13 +124,17 @@
 		76FA4E5543FA615A79C6289B /* Workspace+Close.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workspace+Close.swift"; sourceTree = "<group>"; };
 		794509BC71163BC7664AB491 /* WindowRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRootView.swift; sourceTree = "<group>"; };
 		802EB0E102AFE2CFA9B9CFD2 /* FileIOServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOServiceTests.swift; sourceTree = "<group>"; };
+		9402D08F1D5F8EF299C28A68 /* FileNamingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNamingTests.swift; sourceTree = "<group>"; };
 		95EF2D25B63A38F3DD007298 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
+		A17B19B77CE2A6245C3A635E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A7A1BC86C05D1C03D7586843 /* TXTForMacFinder.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TXTForMacFinder.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BB9A8650DF8ABEB87992F5 /* Workspace+Find.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workspace+Find.swift"; sourceTree = "<group>"; };
 		A9454EAA4112237B15F45356 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationServiceTests.swift; sourceTree = "<group>"; };
 		AB78511083C65F4EED392A59 /* TextEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEncoding.swift; sourceTree = "<group>"; };
 		AE9D2285C9E3D777875C625E /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		C7761EBC63EF59E75C377B31 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		C8CF3A6D4FDB675CB2F61762 /* SessionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStoreTests.swift; sourceTree = "<group>"; };
 		C8FA2674524F738F5B4B2A24 /* EditorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTheme.swift; sourceTree = "<group>"; };
 		C98B0D3B84C795962E222E3F /* ValueTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTypes.swift; sourceTree = "<group>"; };
@@ -107,8 +146,10 @@
 		DBAE56641E92921B01ED0DA9 /* DocumentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStore.swift; sourceTree = "<group>"; };
 		DF804B0DA5AF9405ADCED1C7 /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 		E2465181D6EF5AC97023A4C2 /* TextSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearch.swift; sourceTree = "<group>"; };
+		E2DD69AEE93F850A6BF4011F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E3215CF17464B3A3A2BDE195 /* EncodingCorpus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingCorpus.swift; sourceTree = "<group>"; };
 		E86E159CEDFCAC2048C65A17 /* Workspace+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workspace+Session.swift"; sourceTree = "<group>"; };
+		E93D3DBC66D0126949A81E02 /* FileNaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNaming.swift; sourceTree = "<group>"; };
 		EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		F13818D882E9FEEEFA229281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47DF5088F1E187A05943F42 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -130,6 +171,7 @@
 				73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */,
 				5901978B99AFA764505BD165 /* EncodingDetectorTests.swift */,
 				802EB0E102AFE2CFA9B9CFD2 /* FileIOServiceTests.swift */,
+				9402D08F1D5F8EF299C28A68 /* FileNamingTests.swift */,
 				2F507D3AFDFC4A0ED2BA0780 /* LineEndingTests.swift */,
 				A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */,
 				C8CF3A6D4FDB675CB2F61762 /* SessionStoreTests.swift */,
@@ -155,6 +197,7 @@
 			children = (
 				A65CCAB30F129B135A1B82AA /* Shared */,
 				AE912FB4022034BCBB712B3B /* TXTForMac */,
+				AE19516F65C74F1DD14F970E /* TXTForMacFinder */,
 				3356A34113417FE0FBC35E6A /* TXTForMacTests */,
 				9DDADDCF8E418BF502E97629 /* Products */,
 			);
@@ -179,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				60BF3A1C103DEA63A9473C67 /* TXTForMac.app */,
+				A7A1BC86C05D1C03D7586843 /* TXTForMacFinder.appex */,
 				4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */,
 			);
 			name = Products;
@@ -188,12 +232,22 @@
 			isa = PBXGroup;
 			children = (
 				682601CC06417482618F760D /* AppSettings.swift */,
+				E93D3DBC66D0126949A81E02 /* FileNaming.swift */,
 				214F774DF9F323B846C9F363 /* LineEnding.swift */,
 				CFA814458D884384A65D0761 /* SettingsSchema.swift */,
 				AB78511083C65F4EED392A59 /* TextEncoding.swift */,
 				C98B0D3B84C795962E222E3F /* ValueTypes.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		AE19516F65C74F1DD14F970E /* TXTForMacFinder */ = {
+			isa = PBXGroup;
+			children = (
+				E253F52DD466703130572857 /* Resources */,
+				C7761EBC63EF59E75C377B31 /* FinderSync.swift */,
+			);
+			path = TXTForMacFinder;
 			sourceTree = "<group>";
 		};
 		AE912FB4022034BCBB712B3B /* TXTForMac */ = {
@@ -227,8 +281,17 @@
 		DF8E291C0C5282D9111DE6D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12A705BE33907F11799FCF83 /* InfoPlist.strings */,
 				9F778C53D2354E0993FFC196 /* Localizable.strings */,
 				F13818D882E9FEEEFA229281 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E253F52DD466703130572857 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD18AD636B3F931BFACB6A0D /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -266,10 +329,12 @@
 			buildPhases = (
 				1ACAD66C92C42ABFA812B952 /* Sources */,
 				E266CB786DDE7B8AD37415AD /* Resources */,
+				2346A60B6BD38BED42223506 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5AFC4D15AAF956EF01028A70 /* PBXTargetDependency */,
 			);
 			name = TXTForMac;
 			packageProductDependencies = (
@@ -296,6 +361,24 @@
 			productReference = 4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B54DB21DBF38023C98FF92E2 /* TXTForMacFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEC97B8492258FEFB485D12 /* Build configuration list for PBXNativeTarget "TXTForMacFinder" */;
+			buildPhases = (
+				F480E5F87D34D20C19C55799 /* Sources */,
+				1287B9F9B4033E2CEDA71F43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXTForMacFinder;
+			packageProductDependencies = (
+			);
+			productName = TXTForMacFinder;
+			productReference = A7A1BC86C05D1C03D7586843 /* TXTForMacFinder.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,6 +394,10 @@
 						ProvisioningStyle = Manual;
 					};
 					72A515993B57BF2F020CEFE0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					B54DB21DBF38023C98FF92E2 = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Manual;
 					};
@@ -332,17 +419,27 @@
 			projectRoot = "";
 			targets = (
 				0B0EFB41B5C81A825CF890D0 /* TXTForMac */,
+				B54DB21DBF38023C98FF92E2 /* TXTForMacFinder */,
 				72A515993B57BF2F020CEFE0 /* TXTForMacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1287B9F9B4033E2CEDA71F43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2E65C37D9293FDD53E60F1 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E266CB786DDE7B8AD37415AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */,
+				17588980138B10B4C4813E14 /* InfoPlist.strings in Resources */,
 				50B48DDBD07F180ECC005009 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +454,7 @@
 				D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */,
 				9B770F641A5F7E623BD7B919 /* EncodingDetectorTests.swift in Sources */,
 				7991CCA50111F019210B3903 /* FileIOServiceTests.swift in Sources */,
+				E00D65CB76D62FE5590F3D2E /* FileNamingTests.swift in Sources */,
 				329FED6A7316EA514977393A /* LineEndingTests.swift in Sources */,
 				E4FDBE13B2C1DA4762FAFE8D /* LocalizationServiceTests.swift in Sources */,
 				004B7D3471A1E53A8CDCAD26 /* SessionStoreTests.swift in Sources */,
@@ -381,6 +479,7 @@
 				8FA9310323586B4A25F1B07B /* EncodingCorpus.swift in Sources */,
 				DC6ED1241D150583C2668000 /* EncodingDetector.swift in Sources */,
 				BFD0C8A791D97E146848B243 /* FileIOService.swift in Sources */,
+				534E44544C1322B3EF18FAF0 /* FileNaming.swift in Sources */,
 				4AA04A9F017E650672710820 /* FindBarView.swift in Sources */,
 				27E0A1113878234F3813DD9E /* LineEnding.swift in Sources */,
 				BFA2EC9B5D5CF41304430D0A /* LocalizationService.swift in Sources */,
@@ -407,6 +506,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F480E5F87D34D20C19C55799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF134EB93D2B1256CA7336 /* AppSettings.swift in Sources */,
+				B3264A44C58044569239AC69 /* FileNaming.swift in Sources */,
+				84E06A9C5242F84EE5A9E6C3 /* FinderSync.swift in Sources */,
+				2ED7E82A309728F409A4417C /* LineEnding.swift in Sources */,
+				07E3D661B61851303B5FF2C3 /* SettingsSchema.swift in Sources */,
+				7749F8DEEE817E7CD9348482 /* TextEncoding.swift in Sources */,
+				FD35769108935810AEB47EA5 /* ValueTypes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -415,14 +528,37 @@
 			target = 0B0EFB41B5C81A825CF890D0 /* TXTForMac */;
 			targetProxy = EB95DA8C19A9D65F42776B39 /* PBXContainerItemProxy */;
 		};
+		5AFC4D15AAF956EF01028A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B54DB21DBF38023C98FF92E2 /* TXTForMacFinder */;
+			targetProxy = 88ED39E27A0597307663FEF6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		12A705BE33907F11799FCF83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17B19B77CE2A6245C3A635E /* en */,
+				4D7172D3C2FB4B440E687BB8 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		9F778C53D2354E0993FFC196 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA8902D1E449A86236EC19D1 /* en */,
 				563D14BC56ECF4924F96711F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FD18AD636B3F931BFACB6A0D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2DD69AEE93F850A6BF4011F /* en */,
+				4180C35F8F3F40EDF25DCCAE /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -623,6 +759,24 @@
 			};
 			name = Debug;
 		};
+		7413CB04697FABC9FABF6B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/TXTForMacFinder-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = online.nonchalantludens.txtformac.finder;
+				PRODUCT_NAME = TXTForMacFinder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		B55EE462622ACF7C19487600 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -639,6 +793,24 @@
 			};
 			name = Debug;
 		};
+		C2FB8F42745CB98650743B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/TXTForMacFinder-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = online.nonchalantludens.txtformac.finder;
+				PRODUCT_NAME = TXTForMacFinder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -647,6 +819,15 @@
 			buildConfigurations = (
 				4BAF21C84609A11A95543AD7 /* Debug */,
 				419A341C613CD00F4DCE5207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7BEC97B8492258FEFB485D12 /* Build configuration list for PBXNativeTarget "TXTForMacFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FB8F42745CB98650743B95 /* Debug */,
+				7413CB04697FABC9FABF6B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

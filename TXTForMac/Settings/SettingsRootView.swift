@@ -1,4 +1,5 @@
 import AppKit
+import FinderSync
 import SwiftUI
 
 /// 设置窗口（T-033..T-036）：⌘, 打开，全部设置即时生效（写入走 SettingsStore 单一出口）。
@@ -175,9 +176,17 @@ private struct AppearancePane: View {
 
 private struct FinderPane: View {
     @Bindable var store: SettingsStore
+    @State private var extensionEnabled = FIFinderSyncController.isExtensionEnabled
 
     var body: some View {
         Form {
+            LabeledContent(
+                Settings.text("settings.finderStatus"),
+                value: extensionEnabled
+                    ? Settings.text("settings.finderStatus.enabled")
+                    : Settings.text("settings.finderStatus.disabled")
+            )
+            .onAppear { extensionEnabled = FIFinderSyncController.isExtensionEnabled }
             Toggle(Settings.text("settings.finderEnabled"), isOn: store.binding(\.finderExtensionEnabled))
             HStack {
                 Text(Settings.text("settings.finderDirectories"))

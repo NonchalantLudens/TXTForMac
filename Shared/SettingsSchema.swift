@@ -39,3 +39,16 @@ public enum ByteCount {
         return formatter.string(fromByteCount: Int64(bytes))
     }
 }
+
+/// 配置文件位置（ADR-002：主 App 与扩展共用同一份 JSON）。
+public enum SettingsLocation {
+    /// 默认配置文件地址：`~/Library/Application Support/TXTForMac/config.json`。
+    public static func defaultFileURL(fileManager: FileManager = .default) -> URL {
+        let supportDirectory = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
+            ?? fileManager.homeDirectoryForCurrentUser
+            .appendingPathComponent("Library/Application Support", isDirectory: true)
+        return supportDirectory
+            .appendingPathComponent(SettingsSchema.directoryName, isDirectory: true)
+            .appendingPathComponent(SettingsSchema.fileName)
+    }
+}
