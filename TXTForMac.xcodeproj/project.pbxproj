@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13818D882E9FEEEFA229281 /* Assets.xcassets */; };
+		A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */; };
+		B6EA8A1002D8424CC36403CF /* WindowRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794509BC71163BC7664AB491 /* WindowRootView.swift */; };
+		D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB95DA8C19A9D65F42776B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA32BC9483054B5EEC825302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B0EFB41B5C81A825CF890D0;
+			remoteInfo = TXTForMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTForMacApp.swift; sourceTree = "<group>"; };
+		4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTForMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BF3A1C103DEA63A9473C67 /* TXTForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleConfigurationTests.swift; sourceTree = "<group>"; };
+		794509BC71163BC7664AB491 /* WindowRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRootView.swift; sourceTree = "<group>"; };
+		F13818D882E9FEEEFA229281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3356A34113417FE0FBC35E6A /* TXTForMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */,
+			);
+			path = TXTForMacTests;
+			sourceTree = "<group>";
+		};
+		63AE002610295E027C38CBF0 = {
+			isa = PBXGroup;
+			children = (
+				AE912FB4022034BCBB712B3B /* TXTForMac */,
+				3356A34113417FE0FBC35E6A /* TXTForMacTests */,
+				9DDADDCF8E418BF502E97629 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DDADDCF8E418BF502E97629 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60BF3A1C103DEA63A9473C67 /* TXTForMac.app */,
+				4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE912FB4022034BCBB712B3B /* TXTForMac */ = {
+			isa = PBXGroup;
+			children = (
+				E9417097A1DCC290F94DF44D /* App */,
+				DF8E291C0C5282D9111DE6D8 /* Resources */,
+			);
+			path = TXTForMac;
+			sourceTree = "<group>";
+		};
+		DF8E291C0C5282D9111DE6D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F13818D882E9FEEEFA229281 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9417097A1DCC290F94DF44D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */,
+				794509BC71163BC7664AB491 /* WindowRootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B0EFB41B5C81A825CF890D0 /* TXTForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811DE981D44CE9B399BE922C /* Build configuration list for PBXNativeTarget "TXTForMac" */;
+			buildPhases = (
+				1ACAD66C92C42ABFA812B952 /* Sources */,
+				E266CB786DDE7B8AD37415AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXTForMac;
+			packageProductDependencies = (
+			);
+			productName = TXTForMac;
+			productReference = 60BF3A1C103DEA63A9473C67 /* TXTForMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72A515993B57BF2F020CEFE0 /* TXTForMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB12FC9F8C412E2E13A3ED1 /* Build configuration list for PBXNativeTarget "TXTForMacTests" */;
+			buildPhases = (
+				19860C28C0368BB26AB046F4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BEFDA555A84860E8EB2F9A4 /* PBXTargetDependency */,
+			);
+			name = TXTForMacTests;
+			packageProductDependencies = (
+			);
+			productName = TXTForMacTests;
+			productReference = 4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA32BC9483054B5EEC825302 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = NonchalantLudens;
+				TargetAttributes = {
+					0B0EFB41B5C81A825CF890D0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					72A515993B57BF2F020CEFE0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 7BA030B8AC394CAC71961946 /* Build configuration list for PBXProject "TXTForMac" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 63AE002610295E027C38CBF0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9DDADDCF8E418BF502E97629 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B0EFB41B5C81A825CF890D0 /* TXTForMac */,
+				72A515993B57BF2F020CEFE0 /* TXTForMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E266CB786DDE7B8AD37415AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19860C28C0368BB26AB046F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACAD66C92C42ABFA812B952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */,
+				B6EA8A1002D8424CC36403CF /* WindowRootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BEFDA555A84860E8EB2F9A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B0EFB41B5C81A825CF890D0 /* TXTForMac */;
+			targetProxy = EB95DA8C19A9D65F42776B39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002FEDFD26AF58BF89DB804F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/TXTForMac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = online.nonchalantludens.txtformac;
+				PRODUCT_NAME = TXTForMac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		05B62A5D475CB1038371BD85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = online.nonchalantludens.txtformac.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TXTForMac.app/Contents/MacOS/TXTForMac";
+			};
+			name = Debug;
+		};
+		2AEDB172A8575A1BF189AC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = online.nonchalantludens.txtformac.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TXTForMac.app/Contents/MacOS/TXTForMac";
+			};
+			name = Release;
+		};
+		419A341C613CD00F4DCE5207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		4BAF21C84609A11A95543AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		B55EE462622ACF7C19487600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/TXTForMac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = online.nonchalantludens.txtformac;
+				PRODUCT_NAME = TXTForMac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BA030B8AC394CAC71961946 /* Build configuration list for PBXProject "TXTForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAF21C84609A11A95543AD7 /* Debug */,
+				419A341C613CD00F4DCE5207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		811DE981D44CE9B399BE922C /* Build configuration list for PBXNativeTarget "TXTForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55EE462622ACF7C19487600 /* Debug */,
+				002FEDFD26AF58BF89DB804F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BAB12FC9F8C412E2E13A3ED1 /* Build configuration list for PBXNativeTarget "TXTForMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B62A5D475CB1038371BD85 /* Debug */,
+				2AEDB172A8575A1BF189AC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA32BC9483054B5EEC825302 /* Project object */;
+}
