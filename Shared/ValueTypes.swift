@@ -2,34 +2,15 @@ import Foundation
 
 // 配置项使用的受约束取值类型。
 //
-// 只承载「标识 ↔ 展示」的稳定契约；对应的检测与转换行为在 T-005/T-006 建立的模型里实现。
-// 这些原始值会写入 config.json，因此一经发布不可改写拼写。
+// 编码与换行符的可编码模型已升级为 `Shared/TextEncoding` 与 `Shared/LineEnding`
+// （T-005/T-006），其原始值与这里的标识拼写一致，config.json 无需迁移。
+// 本文件只承载与编码无关的行为偏好。
 
 /// 界面语言。
 public enum AppLanguage: String, Codable, Sendable, CaseIterable {
     case system
     case english = "en"
     case simplifiedChinese = "zh-Hans"
-}
-
-/// 文本编码标识（与 `String.Encoding` 的映射在 TextEncoding 模型中完成）。
-public enum EncodingIdentifier: String, Codable, Sendable, CaseIterable {
-    case utf8 = "utf-8"
-    case utf8BOM = "utf-8-bom"
-    case utf16LittleEndian = "utf-16le"
-    case utf16BigEndian = "utf-16be"
-    case gb18030
-    case big5
-    case shiftJIS = "shift-jis"
-    case latin1 = "latin-1"
-    case ascii
-}
-
-/// 换行符标识。
-public enum LineEndingIdentifier: String, Codable, Sendable, CaseIterable {
-    case lf
-    case crlf
-    case cr
 }
 
 /// 启动行为。

@@ -3,6 +3,117 @@
 /* 应用标识 */
 "app.name" = "TXTForMac";
 "app.tagline" = "A lightweight text editor for macOS";
+"document.untitled" = "Untitled";
+"document.new" = "New Document";
 
 /* 测试与示例用的格式化文案 */
 "test.statusbar.lineColumn" = "Line %ld, Column %ld";
+
+/* 状态栏 */
+"statusbar.lineColumn" = "Ln %ld, Col %ld";
+"statusbar.characters" = "%ld characters";
+"statusbar.selected" = "%ld selected";
+"statusbar.zoom" = "%ld%%";
+"encoding.unknown" = "Unknown";
+"lineEnding.unknown" = "—";
+
+/* 提示条 */
+"banner.largeFileWarning" = "This file is large (%@). Editing may be slow.";
+"banner.dismiss" = "Dismiss";
+
+/* 保存面板 */
+"save.encoding" = "Encoding";
+"save.lineEnding" = "Line Endings";
+"save.writeBOM" = "Write BOM";
+
+/* 未保存确认 */
+"alert.unsaved.title" = "Do you want to save the changes to “%@”?";
+"alert.unsaved.detail" = "If you don't save, your changes will be lost.";
+"alert.unsaved.save" = "Save";
+"alert.unsaved.discard" = "Don't Save";
+"alert.unsaved.cancel" = "Cancel";
+
+/* 菜单 */
+"menu.file.new" = "New";
+"menu.file.open" = "Open…";
+"menu.file.save" = "Save";
+"menu.file.saveAs" = "Save As…";
+"menu.edit.undo" = "Undo";
+"menu.edit.redo" = "Redo";
+"menu.edit.cut" = "Cut";
+"menu.edit.copy" = "Copy";
+"menu.edit.paste" = "Paste";
+"menu.edit.pastePlain" = "Paste as Plain Text";
+"menu.edit.delete" = "Delete";
+"menu.edit.selectAll" = "Select All";
+"menu.edit.timeDate" = "Time & Date";
+"menu.format" = "Format";
+"menu.format.wordWrap" = "Word Wrap";
+"menu.format.font" = "Show Fonts";
+"menu.view" = "View";
+"menu.view.zoomIn" = "Zoom In";
+"menu.view.zoomOut" = "Zoom Out";
+"menu.view.zoomReset" = "Actual Size";
+"menu.view.toggleStatusBar" = "Show Status Bar";
+"menu.view.appearance" = "Appearance";
+"theme.system" = "Match System";
+"theme.light" = "Light";
+"theme.dark" = "Dark";
+
+/* 编码 */
+"encoding.utf-8" = "UTF-8";
+"encoding.utf-8-bom" = "UTF-8 with BOM";
+"encoding.utf-16le" = "UTF-16 LE";
+"encoding.utf-16be" = "UTF-16 BE";
+"encoding.gb18030" = "GB18030 (Simplified Chinese)";
+"encoding.big5" = "Big5 (Traditional Chinese)";
+"encoding.shift-jis" = "Shift-JIS (Japanese)";
+"encoding.latin-1" = "Latin-1 (Western)";
+"encoding.ascii" = "ASCII";
+
+/* 换行符 */
+"lineEnding.lf" = "LF (macOS / Unix)";
+"lineEnding.crlf" = "CRLF (Windows)";
+"lineEnding.cr" = "CR (Classic Mac OS)";
+
+/* 错误 */
+"error.fileNotFound" = "The file could not be found.";
+"error.notRegularFile" = "This is not a regular text file.";
+"error.undecodable" = "The file cannot be decoded as %@.";
+"error.unencodable" = "The text cannot be represented in %@.";
+"error.writeFailed" = "Saving failed: %@";
+
+/* 查找与替换 */
+"menu.find" = "Find";
+"menu.find.find" = "Find…";
+"menu.find.next" = "Find Next";
+"menu.find.previous" = "Find Previous";
+"menu.find.replace" = "Replace…";
+"menu.find.goToLine" = "Go to Line…";
+"find.placeholder" = "Find";
+"find.replacementPlaceholder" = "Replace with";
+"find.replace" = "Replace";
+"find.replaceAll" = "Replace All";
+"find.close" = "Close";
+"find.caseSensitive" = "Match Case";
+"find.wholeWord" = "Whole Words";
+"find.regex" = "Regular Expression";
+"find.invalidQuery" = "Invalid query";
+"find.noMatches" = "Not found";
+"find.matchIndex" = "%ld of %ld";
+"find.matchTotal" = "%ld results";
+
+/* 转到行 */
+"goto.label" = "Go to line:";
+"goto.placeholder" = "Line number";
+"goto.invalidInput" = "Please enter a valid line number.";
+"goto.outOfRange" = "Line %ld does not exist in this document.";
+
+/* 最近文件 */
+"menu.file.openRecent" = "Open Recent";
+"menu.file.openRecent.empty" = "No Recent Files";
+"menu.file.openRecent.clear" = "Clear Menu";
+
+/* 标签与关闭 */
+"menu.file.closeTab" = "Close Tab";
+"menu.file.closeWindow" = "Close Window";

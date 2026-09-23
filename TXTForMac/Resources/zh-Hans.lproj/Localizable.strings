@@ -3,6 +3,117 @@
 /* 应用标识 */
 "app.name" = "TXTForMac";
 "app.tagline" = "macOS 上的轻量文本编辑器";
+"document.untitled" = "未命名";
+"document.new" = "新建文档";
 
 /* 测试与示例用的格式化文案 */
 "test.statusbar.lineColumn" = "第 %ld 行，第 %ld 列";
+
+/* 状态栏 */
+"statusbar.lineColumn" = "行 %ld，列 %ld";
+"statusbar.characters" = "%ld 个字符";
+"statusbar.selected" = "选中 %ld";
+"statusbar.zoom" = "%ld%%";
+"encoding.unknown" = "未知";
+"lineEnding.unknown" = "—";
+
+/* 提示条 */
+"banner.largeFileWarning" = "文件较大（%@），编辑可能变慢。";
+"banner.dismiss" = "知道了";
+
+/* 保存面板 */
+"save.encoding" = "编码";
+"save.lineEnding" = "换行符";
+"save.writeBOM" = "写入 BOM";
+
+/* 未保存确认 */
+"alert.unsaved.title" = "要保存对“%@”的更改吗？";
+"alert.unsaved.detail" = "如果不保存，更改将会丢失。";
+"alert.unsaved.save" = "保存";
+"alert.unsaved.discard" = "不保存";
+"alert.unsaved.cancel" = "取消";
+
+/* 菜单 */
+"menu.file.new" = "新建";
+"menu.file.open" = "打开…";
+"menu.file.save" = "存储";
+"menu.file.saveAs" = "存储为…";
+"menu.edit.undo" = "撤销";
+"menu.edit.redo" = "重做";
+"menu.edit.cut" = "剪切";
+"menu.edit.copy" = "拷贝";
+"menu.edit.paste" = "粘贴";
+"menu.edit.pastePlain" = "粘贴为纯文本";
+"menu.edit.delete" = "删除";
+"menu.edit.selectAll" = "全选";
+"menu.edit.timeDate" = "插入时间与日期";
+"menu.format" = "格式";
+"menu.format.wordWrap" = "自动换行";
+"menu.format.font" = "显示字体";
+"menu.view" = "查看";
+"menu.view.zoomIn" = "放大";
+"menu.view.zoomOut" = "缩小";
+"menu.view.zoomReset" = "实际大小";
+"menu.view.toggleStatusBar" = "显示状态栏";
+"menu.view.appearance" = "外观";
+"theme.system" = "跟随系统";
+"theme.light" = "浅色";
+"theme.dark" = "深色";
+
+/* 编码 */
+"encoding.utf-8" = "UTF-8";
+"encoding.utf-8-bom" = "UTF-8（带 BOM）";
+"encoding.utf-16le" = "UTF-16 LE";
+"encoding.utf-16be" = "UTF-16 BE";
+"encoding.gb18030" = "GB18030（简体中文）";
+"encoding.big5" = "Big5（繁体中文）";
+"encoding.shift-jis" = "Shift-JIS（日语）";
+"encoding.latin-1" = "Latin-1（西文）";
+"encoding.ascii" = "ASCII";
+
+/* 换行符 */
+"lineEnding.lf" = "LF（macOS / Unix）";
+"lineEnding.crlf" = "CRLF（Windows）";
+"lineEnding.cr" = "CR（经典 Mac OS）";
+
+/* 错误 */
+"error.fileNotFound" = "找不到该文件。";
+"error.notRegularFile" = "这不是一个常规文本文件。";
+"error.undecodable" = "无法按 %@ 解码该文件。";
+"error.unencodable" = "文本无法用 %@ 表示。";
+"error.writeFailed" = "保存失败：%@";
+
+/* 查找与替换 */
+"menu.find" = "查找";
+"menu.find.find" = "查找…";
+"menu.find.next" = "查找下一个";
+"menu.find.previous" = "查找上一个";
+"menu.find.replace" = "替换…";
+"menu.find.goToLine" = "转到行…";
+"find.placeholder" = "查找";
+"find.replacementPlaceholder" = "替换为";
+"find.replace" = "替换";
+"find.replaceAll" = "全部替换";
+"find.close" = "关闭";
+"find.caseSensitive" = "区分大小写";
+"find.wholeWord" = "全词匹配";
+"find.regex" = "正则表达式";
+"find.invalidQuery" = "表达式无效";
+"find.noMatches" = "未找到";
+"find.matchIndex" = "第 %ld 处，共 %ld 处";
+"find.matchTotal" = "共 %ld 处";
+
+/* 转到行 */
+"goto.label" = "转到行：";
+"goto.placeholder" = "行号";
+"goto.invalidInput" = "请输入有效的行号。";
+"goto.outOfRange" = "文档没有第 %ld 行。";
+
+/* 最近文件 */
+"menu.file.openRecent" = "打开最近使用";
+"menu.file.openRecent.empty" = "无最近使用的文件";
+"menu.file.openRecent.clear" = "清除菜单";
+
+/* 标签与关闭 */
+"menu.file.closeTab" = "关闭标签";
+"menu.file.closeWindow" = "关闭窗口";

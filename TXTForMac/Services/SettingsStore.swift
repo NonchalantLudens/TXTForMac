@@ -26,6 +26,9 @@ struct DistributedSettingsBroadcaster: SettingsChangeBroadcaster {
 @MainActor
 @Observable
 final class SettingsStore {
+    /// 应用级单例：主 App 与服务的默认配置出口
+    static let shared = SettingsStore()
+
     private(set) var settings: AppSettings
 
     private let fileURL: URL

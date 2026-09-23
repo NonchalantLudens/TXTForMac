@@ -22,12 +22,13 @@ final class LocalizationService {
     /// - Parameters:
     ///   - settings: 语言选择的持久化出口
     ///   - systemDefaults: 系统语言镜像写入的偏好域（测试注入）
-    init(settings: SettingsStore = SettingsStore(), systemDefaults: UserDefaults = .standard) {
+    init(settings: SettingsStore = .shared, systemDefaults: UserDefaults = .standard) {
         self.settings = settings
         let stored = settings.settings.interfaceLanguage
         language = stored
         bundle = Self.bundle(for: stored)
         self.systemDefaults = systemDefaults
+        LocalizationSnapshot.update(bundle)
     }
 
     private let systemDefaults: UserDefaults
@@ -37,6 +38,7 @@ final class LocalizationService {
         guard newLanguage != language else { return }
         language = newLanguage
         bundle = Self.bundle(for: newLanguage)
+        LocalizationSnapshot.update(bundle)
         settings.update { $0.interfaceLanguage = newLanguage }
         settings.syncSystemLanguagePreference(newLanguage, defaults: systemDefaults)
     }
@@ -84,6 +86,42 @@ final class LocalizationService {
             return nil
         }
         return Bundle(path: path)
+    }
+}
+
+/// 供非隔离上下文（如错误展示可能发生在后台线程）使用的当前文案 Bundle 快照。
+enum LocalizationSnapshot {
+    private static let storage = Storage()
+
+    /// 锁与可变状态内聚在一个 @unchecked Sendable 小对象里，
+    /// 避免 nonisolated(unsafe) 全局可变存储（Swift 6 严格并发不欢迎）。
+    private final class Storage: @unchecked Sendable {
+        private let lock = NSLock()
+        private var bundle: Bundle = .main
+
+        func current() -> Bundle {
+            lock.lock()
+            defer { lock.unlock() }
+            return bundle
+        }
+
+        func update(_ newBundle: Bundle) {
+            lock.lock()
+            bundle = newBundle
+            lock.unlock()
+        }
+    }
+
+    static func update(_ newBundle: Bundle) {
+        storage.update(newBundle)
+    }
+
+    static var current: Bundle {
+        storage.current()
+    }
+
+    static func string(_ key: String) -> String {
+        current.localizedString(forKey: key, value: key, table: nil)
     }
 }
 

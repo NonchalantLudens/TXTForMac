@@ -11,8 +11,8 @@ struct AppSettings: Codable, Equatable, Sendable {
     var launchBehavior: LaunchBehavior = .restoreLastSession
     var defaultNewFileName: String = "Untitled"
     var defaultFileExtension: String = "txt"
-    var defaultEncoding: EncodingIdentifier = .utf8
-    var defaultLineEnding: LineEndingIdentifier = .lf
+    var defaultEncoding: TextEncoding = .utf8
+    var defaultLineEnding: LineEnding = .lf
 
     // MARK: 编辑
 
@@ -63,6 +63,16 @@ struct AppSettings: Codable, Equatable, Sendable {
 
     var updateCheckFrequency: CheckUpdateFrequency = .daily
     var updateChannel: UpdateChannel = .stable
+
+    // MARK: 编辑行为补充
+
+    /// 插入时间日期（F5）的格式串
+    var timeDateFormat: String = "yyyy/M/d HH:mm"
+
+    // MARK: 最近文件
+
+    /// 最近打开的文件绝对路径（新的在前），上限由 recentFilesLimit 控制
+    var recentFiles: [String] = []
 
     // MARK: 结构版本
 
@@ -152,10 +162,10 @@ struct AppSettings: Codable, Equatable, Sendable {
             String.self, forKey: .defaultFileExtension
         ) ?? target.defaultFileExtension
         target.defaultEncoding = try container.decodeIfPresent(
-            EncodingIdentifier.self, forKey: .defaultEncoding
+            TextEncoding.self, forKey: .defaultEncoding
         ) ?? target.defaultEncoding
         target.defaultLineEnding = try container.decodeIfPresent(
-            LineEndingIdentifier.self, forKey: .defaultLineEnding
+            LineEnding.self, forKey: .defaultLineEnding
         ) ?? target.defaultLineEnding
     }
 
