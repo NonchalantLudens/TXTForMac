@@ -2,10 +2,13 @@ import SwiftUI
 
 /// 应用入口。
 ///
-/// M0 阶段只提供窗口外壳；编辑器内核（`EditorController`）、主菜单与标签栏
-/// 在同一分支的后续任务中挂载到 `WindowRootView`。
+/// 窗口内容由 `WindowRootView` 提供；主菜单经 `AppCommands` 生成；
+/// 全局服务（配置、语言）在首次访问 `SettingsStore.shared` /
+/// `LocalizationService.shared` 时初始化。
 @main
 struct TXTForMacApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+
     /// 默认窗口尺寸，对齐 devplaybook/PROJECT/UI_STYLE.md 的设计基调。
     static let defaultWindowSize = CGSize(width: 900, height: 600)
 
@@ -17,5 +20,11 @@ struct TXTForMacApp: App {
             width: Self.defaultWindowSize.width,
             height: Self.defaultWindowSize.height
         )
+        .commands {
+            AppCommands()
+        }
     }
 }
+
+/// AppKit 生命周期挂点：注册服务提供者等（M5 扩展）。
+final class AppDelegate: NSObject, NSApplicationDelegate {}

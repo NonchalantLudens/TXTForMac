@@ -28,4 +28,11 @@ public enum SettingsSchema {
 public enum ByteCount {
     public static let kilobyte = 1024
     public static let megabyte = 1_048_576
+
+    /// 面向用户的可读格式（例如 1.5 MB）。
+    public static func format(_ bytes: Int) -> String {
+        let formatter = ByteCountFormatter()
+        formatter.countStyle = .file
+        return formatter.string(fromByteCount: Int64(bytes))
+    }
 }

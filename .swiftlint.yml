@@ -4,6 +4,8 @@ disabled_rules:
   - todo
   - trailing_whitespace
   - opening_brace
+  # swiftformat（commas）会在多行集合字面量自动补尾逗号，两者取 swiftformat 为准
+  - trailing_comma
 opt_in_rules:
   - empty_count
   - explicit_init

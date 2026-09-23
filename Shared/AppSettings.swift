@@ -64,6 +64,11 @@ struct AppSettings: Codable, Equatable, Sendable {
     var updateCheckFrequency: CheckUpdateFrequency = .daily
     var updateChannel: UpdateChannel = .stable
 
+    // MARK: 编辑行为补充
+
+    /// 插入时间日期（F5）的格式串
+    var timeDateFormat: String = "yyyy/M/d HH:mm"
+
     // MARK: 结构版本
 
     /// 读入历史配置时可能小于 `SettingsSchema.schemaVersion`

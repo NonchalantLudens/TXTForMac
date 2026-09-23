@@ -71,8 +71,11 @@ enum FileIOService {
     }
 
     /// 读取文本文件：判编码（T-007）→ 严格解码 → 剥 BOM → 探测换行符 → 分级。
+    ///
+    /// - Parameter forcing: 用户显式指定的编码（跳过自动判定，用于「重新打开并指定编码」）
     static func read(
         at url: URL,
+        forcing encodingOverride: TextEncoding? = nil,
         warningThreshold: Int = 20 * ByteCount.megabyte,
         readOnlyThreshold: Int = 100 * ByteCount.megabyte
     ) throws -> LoadedFile {
@@ -90,7 +93,9 @@ enum FileIOService {
         }
 
         let (payload, bom) = TextEncoding.strippingBOM(from: data)
-        let encoding: TextEncoding = if let bom {
+        let encoding: TextEncoding = if let forced = encodingOverride {
+            forced
+        } else if let bom {
             bomEncoding(bom)
         } else {
             EncodingDetector.detect(in: payload)

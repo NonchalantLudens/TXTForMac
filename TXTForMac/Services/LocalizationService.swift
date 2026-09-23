@@ -22,7 +22,7 @@ final class LocalizationService {
     /// - Parameters:
     ///   - settings: 语言选择的持久化出口
     ///   - systemDefaults: 系统语言镜像写入的偏好域（测试注入）
-    init(settings: SettingsStore = SettingsStore(), systemDefaults: UserDefaults = .standard) {
+    init(settings: SettingsStore = .shared, systemDefaults: UserDefaults = .standard) {
         self.settings = settings
         let stored = settings.settings.interfaceLanguage
         language = stored
