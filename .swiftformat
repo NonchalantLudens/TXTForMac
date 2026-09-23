@@ -1,0 +1,5 @@
+# SwiftFormat 配置 —— macOS 栈约束 S8 要求零 error。
+--swiftversion 6.0
+--indent 4
+--maxwidth 120
+--exclude build,DerivedData,.build

@@ -1,6 +1,5 @@
-import XCTest
-
 @testable import TXTForMac
+import XCTest
 
 /// 守护 Info.plist 中的关键声明：Bundle 标识、最低系统版本与双语声明。
 /// 这些值一旦回归会直接影响分发与本地化，属于必须被测试锁住的事实。
