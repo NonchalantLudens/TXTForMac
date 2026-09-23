@@ -38,6 +38,7 @@ targets:
     platform: macOS
     sources:
       - path: TXTForMac
+      - path: Shared
     settings:
       base:
         PRODUCT_NAME: TXTForMac

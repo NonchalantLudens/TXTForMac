@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */; };
 		4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13818D882E9FEEEFA229281 /* Assets.xcassets */; };
+		76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA814458D884384A65D0761 /* SettingsSchema.swift */; };
+		8C39E4AD6AB88C1F50CE74CF /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */; };
+		8F712A6036AF39D252C82994 /* ValueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B0D3B84C795962E222E3F /* ValueTypes.swift */; };
 		A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */; };
 		B6EA8A1002D8424CC36403CF /* WindowRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794509BC71163BC7664AB491 /* WindowRootView.swift */; };
 		D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */; };
+		FC6F11EF2E746DADF6122171 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682601CC06417482618F760D /* AppSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +32,13 @@
 		184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTForMacApp.swift; sourceTree = "<group>"; };
 		4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTForMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BF3A1C103DEA63A9473C67 /* TXTForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		682601CC06417482618F760D /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleConfigurationTests.swift; sourceTree = "<group>"; };
 		794509BC71163BC7664AB491 /* WindowRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRootView.swift; sourceTree = "<group>"; };
+		9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
+		C98B0D3B84C795962E222E3F /* ValueTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTypes.swift; sourceTree = "<group>"; };
+		CFA814458D884384A65D0761 /* SettingsSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSchema.swift; sourceTree = "<group>"; };
+		EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		F13818D882E9FEEEFA229281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */,
+				9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */,
 			);
 			path = TXTForMacTests;
 			sourceTree = "<group>";
@@ -44,6 +55,7 @@
 		63AE002610295E027C38CBF0 = {
 			isa = PBXGroup;
 			children = (
+				A65CCAB30F129B135A1B82AA /* Shared */,
 				AE912FB4022034BCBB712B3B /* TXTForMac */,
 				3356A34113417FE0FBC35E6A /* TXTForMacTests */,
 				9DDADDCF8E418BF502E97629 /* Products */,
@@ -59,13 +71,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A65CCAB30F129B135A1B82AA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				682601CC06417482618F760D /* AppSettings.swift */,
+				CFA814458D884384A65D0761 /* SettingsSchema.swift */,
+				C98B0D3B84C795962E222E3F /* ValueTypes.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		AE912FB4022034BCBB712B3B /* TXTForMac */ = {
 			isa = PBXGroup;
 			children = (
 				E9417097A1DCC290F94DF44D /* App */,
 				DF8E291C0C5282D9111DE6D8 /* Resources */,
+				BFA2F4A26A74A8E7A01C696E /* Services */,
 			);
 			path = TXTForMac;
+			sourceTree = "<group>";
+		};
+		BFA2F4A26A74A8E7A01C696E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		DF8E291C0C5282D9111DE6D8 /* Resources */ = {
@@ -181,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */,
+				8C39E4AD6AB88C1F50CE74CF /* SettingsStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6F11EF2E746DADF6122171 /* AppSettings.swift in Sources */,
+				76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */,
+				1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */,
 				A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */,
+				8F712A6036AF39D252C82994 /* ValueTypes.swift in Sources */,
 				B6EA8A1002D8424CC36403CF /* WindowRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
