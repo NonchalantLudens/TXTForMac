@@ -1,0 +1,8 @@
+/* TXTForMac — 简体中文 */
+
+/* 应用标识 */
+"app.name" = "TXTForMac";
+"app.tagline" = "macOS 上的轻量文本编辑器";
+
+/* 测试与示例用的格式化文案 */
+"test.statusbar.lineColumn" = "第 %ld 行，第 %ld 列";

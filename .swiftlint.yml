@@ -1,0 +1,55 @@
+# SwiftLint 配置 —— macOS 栈约束 S8 要求零 error。
+# 占位符（TODO/FIXME/stub）由 devplaybook 约束引擎统一管控，故此处关闭 todo 规则。
+disabled_rules:
+  - todo
+  - trailing_whitespace
+  - opening_brace
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - force_unwrapping
+  - implicit_return
+  - modifier_order
+  - operator_usage_whitespace
+  - redundant_nil_coalescing
+  - sorted_first_last
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+  - yoda_condition
+included:
+  - TXTForMac
+  - Shared
+  - TXTForMacFinder
+  - TXTForMacTests
+excluded:
+  - build
+  - DerivedData
+  - .build
+line_length:
+  warning: 120
+  error: 160
+  ignores_comments: true
+  ignores_urls: true
+type_body_length:
+  warning: 250
+  error: 400
+file_length:
+  warning: 400
+  error: 600
+function_body_length:
+  warning: 50
+  error: 80
+cyclomatic_complexity:
+  warning: 12
+  error: 20
+identifier_name:
+  min_length:
+    warning: 2
+    error: 1
+  excluded:
+    - id
+    - db
+    - en
+    - up
+reporter: xcode

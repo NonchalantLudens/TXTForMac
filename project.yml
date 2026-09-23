@@ -1,0 +1,87 @@
+name: TXTForMac
+
+options:
+  bundleIdPrefix: online.nonchalantludens
+  deploymentTarget:
+    macOS: "15.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  generateEmptyDirectories: false
+  groupSortPosition: top
+  minimumXcodeGenVersion: "2.42.0"
+
+attributes:
+  ORGANIZATIONNAME: NonchalantLudens
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+    # ad-hoc 签名（ADR-003）：无 Developer ID，不做公证，Sparkle EdDSA 为安全边界
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    DEVELOPMENT_TEAM: ""
+    ENABLE_HARDENED_RUNTIME: NO
+    # 主 App 关闭沙盒：需要读写用户任意路径，且与 Finder 扩展共用普通路径配置（ADR-002）
+    ENABLE_APP_SANDBOX: NO
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    DEAD_CODE_STRIPPING: YES
+    CLANG_ENABLE_MODULES: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+
+targets:
+  TXTForMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: TXTForMac
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_NAME: TXTForMac
+        PRODUCT_BUNDLE_IDENTIFIER: online.nonchalantludens.txtformac
+        INFOPLIST_FILE: Config/TXTForMac-Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        COMBINE_HIDPI_IMAGES: YES
+        ENABLE_PREVIEWS: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+
+  TXTForMacTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: TXTForMacTests
+    dependencies:
+      - target: TXTForMac
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: online.nonchalantludens.txtformac.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/TXTForMac.app/Contents/MacOS/TXTForMac"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        SWIFT_VERSION: "6.0"
+
+schemes:
+  TXTForMac:
+    build:
+      targets:
+        TXTForMac: all
+        TXTForMacTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - TXTForMacTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
