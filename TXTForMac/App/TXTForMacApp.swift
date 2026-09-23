@@ -23,6 +23,9 @@ struct TXTForMacApp: App {
         .commands {
             AppCommands()
         }
+        Settings {
+            SettingsRootView()
+        }
     }
 }
 

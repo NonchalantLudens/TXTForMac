@@ -31,6 +31,7 @@
 		8E71E6DB2B72E95A084F0501 /* Workspace+Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB9A8650DF8ABEB87992F5 /* Workspace+Find.swift */; };
 		8F712A6036AF39D252C82994 /* ValueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B0D3B84C795962E222E3F /* ValueTypes.swift */; };
 		8FA9310323586B4A25F1B07B /* EncodingCorpus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3215CF17464B3A3A2BDE195 /* EncodingCorpus.swift */; };
+		92B9D71DC0DC7C2237A52880 /* SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E66D2ED015AD3E3F1A9CB3D /* SettingsRootView.swift */; };
 		92C98064F819312737B5EAE1 /* WorkspaceRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2571BF8165B3C0A852285C /* WorkspaceRegistry.swift */; };
 		98CE411E54DA8F287D5F8EE9 /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6131E781CD68498F31FB689 /* AppCommands.swift */; };
 		9B770F641A5F7E623BD7B919 /* EncodingDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901978B99AFA764505BD165 /* EncodingDetectorTests.swift */; };
@@ -82,6 +83,7 @@
 		60BF3A1C103DEA63A9473C67 /* TXTForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		682601CC06417482618F760D /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		6A6F9A567925035C0AFAB62F /* EncodingDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingDetector.swift; sourceTree = "<group>"; };
+		6E66D2ED015AD3E3F1A9CB3D /* SettingsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRootView.swift; sourceTree = "<group>"; };
 		73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleConfigurationTests.swift; sourceTree = "<group>"; };
 		752143CA92B25FF821A8222C /* SaveOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOptions.swift; sourceTree = "<group>"; };
 		76FA4E5543FA615A79C6289B /* Workspace+Close.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workspace+Close.swift"; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		1A23212EF030DE0E575831E9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6E66D2ED015AD3E3F1A9CB3D /* SettingsRootView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		3356A34113417FE0FBC35E6A /* TXTForMacTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +204,7 @@
 				6089C99529980AB4B0D5201C /* Models */,
 				DF8E291C0C5282D9111DE6D8 /* Resources */,
 				BFA2F4A26A74A8E7A01C696E /* Services */,
+				1A23212EF030DE0E575831E9 /* Settings */,
 				FA90DFA6397FE5138AC46724 /* Tabs */,
 			);
 			path = TXTForMac;
@@ -375,6 +386,7 @@
 				BFA2EC9B5D5CF41304430D0A /* LocalizationService.swift in Sources */,
 				D636CE7604CE7BA7B7658598 /* SaveOptions.swift in Sources */,
 				42B9E5B6715F93426391ECCA /* SessionStore.swift in Sources */,
+				92B9D71DC0DC7C2237A52880 /* SettingsRootView.swift in Sources */,
 				76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */,
 				1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */,
 				EF8F7A66DAAA92AFE605FD9E /* StatusBarView.swift in Sources */,

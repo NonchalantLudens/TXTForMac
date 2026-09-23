@@ -22,6 +22,9 @@ public enum SettingsSchema {
 
     /// 系统级语言覆盖的偏好键（写入应用自身的 UserDefaults 域，下次启动对齐系统级界面）
     public static let systemLanguageOverrideKey = "AppleLanguages"
+
+    /// 开源仓库地址（S7：网络地址集中配置）
+    public static let githubRepositoryURL = "https://github.com/NonchalantLudens/TXTForMac"
 }
 
 /// 字节数语义常量，避免阈值配置里出现魔法数字。

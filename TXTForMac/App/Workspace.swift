@@ -160,6 +160,11 @@ final class Workspace: NSObject {
     }
 
     func applyAppearance(_ preference: ThemePreference) {
+        Self.applyAppearanceGlobally(preference)
+    }
+
+    /// 应用主题（外观切换的唯一实现点，设置页与菜单共用）。
+    static func applyAppearanceGlobally(_ preference: ThemePreference) {
         switch preference {
         case .system:
             NSApp.appearance = nil
