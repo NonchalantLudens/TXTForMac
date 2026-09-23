@@ -19,6 +19,9 @@ public enum SettingsSchema {
     /// 配置变更广播名（经 `DistributedNotificationCenter` 发往 Finder 扩展）
     public static let didChangeNotificationName =
         "online.nonchalantludens.txtformac.settings.didChange"
+
+    /// 系统级语言覆盖的偏好键（写入应用自身的 UserDefaults 域，下次启动对齐系统级界面）
+    public static let systemLanguageOverrideKey = "AppleLanguages"
 }
 
 /// 字节数语义常量，避免阈值配置里出现魔法数字。

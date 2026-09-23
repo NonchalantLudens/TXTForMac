@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */; };
+		382EE32A0BD64EE8F610CA5E /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */; };
 		4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13818D882E9FEEEFA229281 /* Assets.xcassets */; };
+		50B48DDBD07F180ECC005009 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F778C53D2354E0993FFC196 /* Localizable.strings */; };
 		76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA814458D884384A65D0761 /* SettingsSchema.swift */; };
 		8C39E4AD6AB88C1F50CE74CF /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */; };
 		8F712A6036AF39D252C82994 /* ValueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B0D3B84C795962E222E3F /* ValueTypes.swift */; };
 		A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */; };
 		B6EA8A1002D8424CC36403CF /* WindowRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794509BC71163BC7664AB491 /* WindowRootView.swift */; };
+		BFA2EC9B5D5CF41304430D0A /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066278ACA50BFA8E4819B610 /* LocalizationService.swift */; };
 		D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */; };
+		E4FDBE13B2C1DA4762FAFE8D /* LocalizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */; };
 		FC6F11EF2E746DADF6122171 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682601CC06417482618F760D /* AppSettings.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,15 +33,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		066278ACA50BFA8E4819B610 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 		184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTForMacApp.swift; sourceTree = "<group>"; };
+		3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
 		4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTForMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		563D14BC56ECF4924F96711F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		60BF3A1C103DEA63A9473C67 /* TXTForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		682601CC06417482618F760D /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleConfigurationTests.swift; sourceTree = "<group>"; };
 		794509BC71163BC7664AB491 /* WindowRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRootView.swift; sourceTree = "<group>"; };
 		9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
+		A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationServiceTests.swift; sourceTree = "<group>"; };
 		C98B0D3B84C795962E222E3F /* ValueTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTypes.swift; sourceTree = "<group>"; };
 		CFA814458D884384A65D0761 /* SettingsSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSchema.swift; sourceTree = "<group>"; };
+		DA8902D1E449A86236EC19D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		F13818D882E9FEEEFA229281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				73867543E8BD37D309ECAD9C /* BundleConfigurationTests.swift */,
+				A97474C7E1959CAFA5BBCF39 /* LocalizationServiceTests.swift */,
 				9793B82F913A7493469E2B2F /* SettingsStoreTests.swift */,
+				3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */,
 			);
 			path = TXTForMacTests;
 			sourceTree = "<group>";
@@ -94,6 +105,7 @@
 		BFA2F4A26A74A8E7A01C696E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				066278ACA50BFA8E4819B610 /* LocalizationService.swift */,
 				EDD57652F0994E8D7B5A90EE /* SettingsStore.swift */,
 			);
 			path = Services;
@@ -102,6 +114,7 @@
 		DF8E291C0C5282D9111DE6D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F778C53D2354E0993FFC196 /* Localizable.strings */,
 				F13818D882E9FEEEFA229281 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -181,6 +194,7 @@
 			knownRegions = (
 				Base,
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 63AE002610295E027C38CBF0;
 			minimizedProjectReferenceProxies = 1;
@@ -201,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E954E8F3B593540EF56625E /* Assets.xcassets in Resources */,
+				50B48DDBD07F180ECC005009 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E28F3E16FD8A05A5102391 /* BundleConfigurationTests.swift in Sources */,
+				E4FDBE13B2C1DA4762FAFE8D /* LocalizationServiceTests.swift in Sources */,
 				8C39E4AD6AB88C1F50CE74CF /* SettingsStoreTests.swift in Sources */,
+				382EE32A0BD64EE8F610CA5E /* TestSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC6F11EF2E746DADF6122171 /* AppSettings.swift in Sources */,
+				BFA2EC9B5D5CF41304430D0A /* LocalizationService.swift in Sources */,
 				76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */,
 				1BB6BD4487B7D85D36E179F0 /* SettingsStore.swift in Sources */,
 				A5CBA16281E26B6423B0B91E /* TXTForMacApp.swift in Sources */,
@@ -238,6 +256,18 @@
 			targetProxy = EB95DA8C19A9D65F42776B39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F778C53D2354E0993FFC196 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8902D1E449A86236EC19D1 /* en */,
+				563D14BC56ECF4924F96711F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		002FEDFD26AF58BF89DB804F /* Release */ = {

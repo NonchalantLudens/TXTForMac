@@ -124,12 +124,3 @@ final class SettingsStoreTests: XCTestCase {
         XCTAssertEqual(broadcaster.changeCount, 0)
     }
 }
-
-/// 测试用广播器，记录调用次数。
-private final class SpyBroadcaster: SettingsChangeBroadcaster, @unchecked Sendable {
-    private(set) var changeCount = 0
-
-    func postChange() {
-        changeCount += 1
-    }
-}

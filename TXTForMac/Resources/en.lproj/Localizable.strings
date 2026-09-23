@@ -1,0 +1,8 @@
+/* TXTForMac — English (baseline) */
+
+/* 应用标识 */
+"app.name" = "TXTForMac";
+"app.tagline" = "A lightweight text editor for macOS";
+
+/* 测试与示例用的格式化文案 */
+"test.statusbar.lineColumn" = "Line %ld, Column %ld";

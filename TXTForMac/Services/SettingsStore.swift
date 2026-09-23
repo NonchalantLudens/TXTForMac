@@ -73,6 +73,19 @@ final class SettingsStore {
         settings = loaded.settings
     }
 
+    /// 把语言选择镜像到系统偏好。
+    ///
+    /// 应用内文案由 `LocalizationService` 即时切换；系统级界面（如打开面板）读取
+    /// `AppleLanguages`，需下次启动对齐。跟随系统时移除覆盖。
+    func syncSystemLanguagePreference(_ language: AppLanguage, defaults: UserDefaults = .standard) {
+        switch language {
+        case .system:
+            defaults.removeObject(forKey: SettingsSchema.systemLanguageOverrideKey)
+        case .english, .simplifiedChinese:
+            defaults.set([language.rawValue], forKey: SettingsSchema.systemLanguageOverrideKey)
+        }
+    }
+
     /// 默认配置文件地址：`~/Library/Application Support/TXTForMac/config.json`。
     static func defaultFileURL(fileManager: FileManager = .default) -> URL {
         let supportDirectory = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
