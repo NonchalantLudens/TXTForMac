@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>TXTForMac</title>
+    <link>https://nonchalantludens.github.io/TXTForMac/appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+    <!-- 新版本条目由 scripts/release.sh 自动插入到本注释之后 -->
+    <item>
+      <title>Version 1.0.0</title>
+      <pubDate>Thu, 24 Sep 2026 03:50:30 +0000</pubDate>
+      <sparkle:version>100</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <link>https://github.com/NonchalantLudens/TXTForMac/releases/download/v1.0.0/TXTForMac-1.0.0.zip</link>
+      <enclosure url="https://github.com/NonchalantLudens/TXTForMac/releases/download/v1.0.0/TXTForMac-1.0.0.zip" sparkle:edSignature="LJPexJ+wLYG09X+fWHhGZegq5+cFIs2E2Ohi42KeUm8Yizsqlc0BcNgN6iC0YRWuBCnz00s/kdNSklFr6THHCA==" length="2136951" type="application/octet-stream" />
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    </item>
+  </channel>
+</rss>
