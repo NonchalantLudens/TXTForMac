@@ -178,3 +178,4 @@
 
 /* 应用菜单 */
 "menu.app.checkUpdates" = "检查更新…";
+"settings.checkNow" = "立即检查";

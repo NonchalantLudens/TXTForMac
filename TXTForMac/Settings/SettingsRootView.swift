@@ -278,6 +278,12 @@ private struct UpdatePane: View {
                     forInfoDictionaryKey: "CFBundleShortVersionString"
                 ) as? String ?? "-"
             )
+            Button(Settings.text("settings.checkNow")) {
+                UpdaterService.shared.checkForUpdates()
+            }
+            .onChange(of: store.settings.updateCheckFrequency) { newValue in
+                UpdaterService.shared.applyScheduledInterval(newValue)
+            }
         }
         .padding(UIConstants.spacingLoose)
     }
