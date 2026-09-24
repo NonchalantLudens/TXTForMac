@@ -75,6 +75,14 @@
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
+	<key>SUFeedURL</key>
+	<string>https://nonchalantludens.github.io/TXTForMac/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>PCIGnvlZwRko7O7I8kkMfzswvy8J0hthyiE2qiQhWxs=</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUScheduledCheckInterval</key>
+	<integer>86400</integer>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>

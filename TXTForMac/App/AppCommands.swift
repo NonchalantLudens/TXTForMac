@@ -19,6 +19,13 @@ struct AppCommands: Commands {
     @FocusedValue(\.commandRouter) private var router: Workspace?
 
     var body: some Commands {
+        CommandGroup(after: .appInfo) {
+            Button(LocalizationSnapshot.string("menu.app.checkUpdates")) {
+                UpdaterService.shared.checkForUpdates()
+            }
+            .disabled(!UpdaterService.shared.canCheckForUpdates)
+        }
+
         CommandGroup(replacing: .newItem) {
             Button(LocalizationSnapshot.string("menu.file.new")) {
                 router?.newDocument()
