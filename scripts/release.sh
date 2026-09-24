@@ -36,7 +36,11 @@ echo "==> 1/7 版本号 → project.yml ($VERSION)"
 sed -i '' "s/MARKETING_VERSION: \".*\"/MARKETING_VERSION: \"$VERSION\"/" project.yml
 xcodegen generate
 git add project.yml TXTForMac.xcodeproj
-git commit -m "release: 版本号更新至 v$VERSION"
+if ! git diff --cached --quiet; then
+  git commit -m "release: 版本号更新至 v$VERSION"
+else
+  echo "    版本号无变化，跳过提交"
+fi
 
 echo "==> 2/7 Release 构建"
 xcodebuild -scheme TXTForMac \
