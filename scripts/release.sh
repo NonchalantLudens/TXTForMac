@@ -118,6 +118,8 @@ rm -f "$FEED_REPO_DIR/appcast.xml.tmp"
 
 echo "==> 7/7 tag + GitHub Release + 推送"
 git tag "v$VERSION"
+git push origin main
+git push origin "v$VERSION"
 gh release create "v$VERSION" "$ZIP" "$DMG" \
   --title "TXTForMac v$VERSION" \
   --notes "TXTForMac $VERSION
@@ -127,7 +129,6 @@ See CHANGELOG.md for details. / 详见 CHANGELOG.md。
 **Install / 安装**: download the DMG and drag TXTForMac into Applications.
 First launch (unsigned build): right-click the app → Open." \
   --verify-tag
-git push origin "v$VERSION"
 (cd "$FEED_REPO_DIR" && git push origin gh-pages)
 
 echo ""
