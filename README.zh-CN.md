@@ -12,8 +12,8 @@ TXTForMac 是用 Swift 打造的原生 macOS 文本编辑器。它还原 Windows
 老实的纯文本、可靠的编码、零负担 —— 再补上 macOS 用户期待的标签页、会话恢复、完整设置、
 Finder 集成与自动更新。
 
-**状态：开发中。** 首个公开版本将在
-[Releases](https://github.com/NonchalantLudens/TXTForMac/releases) 页面发布。
+**v1.0.0 已发布！** 从
+[Releases](https://github.com/NonchalantLudens/TXTForMac/releases) 页面下载，应用会自动检查更新。
 
 ## 功能
 

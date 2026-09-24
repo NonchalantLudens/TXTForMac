@@ -13,8 +13,8 @@ Windows Notepad — honest plain text, reliable encodings, zero ceremony — and
 macOS users expect: tabs, session restore, a real settings window, Finder integration and
 automatic updates.
 
-**Status: in active development.** The first public release will be announced on the
-[Releases](https://github.com/NonchalantLudens/TXTForMac/releases) page.
+**v1.0.0 released!** Download it from the
+[Releases](https://github.com/NonchalantLudens/TXTForMac/releases) page — the app checks for updates automatically.
 
 ## Features
 

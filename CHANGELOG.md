@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added / 新增
 
+- (planned) Tab tear-out into separate windows / （计划）标签拖出成独立窗口。
+- (planned) User-defined editor color overrides / （计划）用户自定义编辑器配色覆盖。
+
+## [1.0.0] - 2026-09-24
+
+### Added / 新增
+
 - Project scaffold: xcodegen-driven app + unit-test targets, macOS 15.0, ad-hoc signing. / 工程骨架：xcodegen 驱动的 App 与单元测试 target，macOS 15.0，ad-hoc 签名。
 - Settings foundation: `AppSettings` covering the full settings inventory plus a single
   read/write entry point (`SettingsStore`) with atomic writes, corrupt-file backup and
