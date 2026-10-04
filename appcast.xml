@@ -7,6 +7,15 @@
     <language>en</language>
     <!-- 新版本条目由 scripts/release.sh 自动插入到本注释之后 -->
     <item>
+      <title>Version 1.0.2</title>
+      <pubDate>Sun, 04 Oct 2026 05:30:43 +0000</pubDate>
+      <sparkle:version>102</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+      <link>https://github.com/NonchalantLudens/TXTForMac/releases/download/v1.0.2/TXTForMac-1.0.2.zip</link>
+      <enclosure url="https://github.com/NonchalantLudens/TXTForMac/releases/download/v1.0.2/TXTForMac-1.0.2.zip" sparkle:edSignature="9rdHkBkM6tGCK/7mS77LZc8Qph++6hagQ/MZn/orWynxnRjMjYkZWHeEAe2R8Y4F4/mv1Dk+Pou6Lt6kJS0OAA==" length="2686547" type="application/octet-stream" />
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    </item>
+    <item>
       <title>Version 1.0.1</title>
       <pubDate>Sun, 04 Oct 2026 02:32:28 +0000</pubDate>
       <sparkle:version>101</sparkle:version>
