@@ -22,6 +22,7 @@ fi
 DERIVED_ROOT="${TXTFORMAC_DERIVED:-$HOME/Library/Caches/txtformac-dd}"
 DERIVED="$DERIVED_ROOT/release-$VERSION"
 TOOLS="$ROOT/.tmp/sparkle/bin"
+SPARKLE_ED_KEY_FILE="${SPARKLE_ED_KEY_FILE:-$HOME/.config/txtformac/sparkle_ed25519.file}"
 REPO="NonchalantLudens/TXTForMac"
 FEED_REPO_DIR="$DERIVED/gh-pages"
 
@@ -31,6 +32,7 @@ cd "$ROOT"
 git diff --quiet || { echo "❌ 有未提交改动，先提交"; exit 1; }
 git rev-parse --verify "v$VERSION" >/dev/null 2>&1 && { echo "❌ tag v$VERSION 已存在"; exit 1; }
 [ -x "$TOOLS/sign_update" ] || { echo "❌ 缺少 Sparkle 工具（.tmp/sparkle/bin/sign_update）"; exit 1; }
+[ -f "$SPARKLE_ED_KEY_FILE" ] || { echo "❌ 缺少 EdDSA 私钥文件：$SPARKLE_ED_KEY_FILE"; exit 1; }
 
 echo "==> 1/7 版本号 → project.yml ($VERSION)"
 sed -i '' "s/MARKETING_VERSION: \".*\"/MARKETING_VERSION: \"$VERSION\"/" project.yml
@@ -61,7 +63,7 @@ rm -f "$DMG"
 hdiutil create -volname "TXTForMac" -srcfolder "$APP" -ov -format UDZO "$DMG" >/dev/null
 
 echo "==> 5/7 EdDSA 签名并渲染 appcast 条目"
-SIGN_OUTPUT="$("$TOOLS/sign_update" "$ZIP")"
+SIGN_OUTPUT="$("$TOOLS/sign_update" --ed-key-file "$SPARKLE_ED_KEY_FILE" "$ZIP")"
 SIG="$(echo "$SIGN_OUTPUT" | sed -n 's/.*sparkle:edSignature="\([^"]*\)".*/\1/p')"
 LENGTH="$(echo "$SIGN_OUTPUT" | sed -n 's/.*length="\([0-9]*\)".*/\1/p')"
 [ -n "$SIG" ] && [ -n "$LENGTH" ] || { echo "❌ EdDSA 签名失败：$SIGN_OUTPUT"; exit 1; }

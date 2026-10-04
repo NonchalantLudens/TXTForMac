@@ -78,7 +78,7 @@
 	<key>SUFeedURL</key>
 	<string>https://nonchalantludens.github.io/TXTForMac/appcast.xml</string>
 	<key>SUPublicEDKey</key>
-	<string>PCIGnvlZwRko7O7I8kkMfzswvy8J0hthyiE2qiQhWxs=</string>
+	<string>XhnKOeXT8v4jroJdiSxLV3NKJTJE+kO41S7ORZ3WqIw=</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUScheduledCheckInterval</key>
