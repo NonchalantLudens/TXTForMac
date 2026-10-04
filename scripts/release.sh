@@ -59,8 +59,31 @@ echo "==> 4/7 打包 ZIP + DMG"
 ZIP="$DERIVED/TXTForMac-$VERSION.zip"
 DMG="$DERIVED/TXTForMac-$VERSION.dmg"
 ditto -c -k --keepParent "$APP" "$ZIP"
+# DMG 采用 macOS 标准「拖拽安装」布局（背景图 + 图标定位 + Applications 链接）
 rm -f "$DMG"
-hdiutil create -volname "TXTForMac" -srcfolder "$APP" -ov -format UDZO "$DMG" >/dev/null
+if command -v node >/dev/null 2>&1; then
+  [ -d "$ROOT/.tmp/appdmg/node_modules/appdmg" ] || npm install --prefix "$ROOT/.tmp/appdmg" appdmg >/dev/null
+  cat > "$DERIVED/dmg-spec.json" << EOF
+{
+  "title": "TXTForMac $VERSION",
+  "icon": "$APP/Contents/Resources/AppIcon.icns",
+  "background": "$ROOT/scripts/dmg-background.png",
+  "icon-size": 96,
+  "window": {
+    "position": { "x": 240, "y": 160 },
+    "size": { "width": 660, "height": 420 }
+  },
+  "contents": [
+    { "x": 102, "y": 152, "type": "file", "path": "$APP" },
+    { "x": 462, "y": 152, "type": "link", "path": "/Applications" }
+  ]
+}
+EOF
+  node "$ROOT/.tmp/appdmg/node_modules/appdmg/bin/appdmg.js" "$DERIVED/dmg-spec.json" "$DMG" >/dev/null
+else
+  echo "    ⚠ 未检测到 node，回退素面 DMG（brew install node 可启用标准布局）"
+  hdiutil create -volname "TXTForMac" -srcfolder "$APP" -ov -format UDZO "$DMG" >/dev/null
+fi
 
 echo "==> 5/7 EdDSA 签名并渲染 appcast 条目"
 SIGN_OUTPUT="$("$TOOLS/sign_update" --ed-key-file "$SPARKLE_ED_KEY_FILE" "$ZIP")"
