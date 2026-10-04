@@ -81,14 +81,12 @@ ITEM="    <item>
     </item>"
 
 echo "==> 6/7 同步 gh-pages（appcast.xml）"
-if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
-  git fetch origin gh-pages >/dev/null
-fi
-if git rev-parse --verify gh-pages >/dev/null 2>&1; then
-  git worktree remove --force "$FEED_REPO_DIR" 2>/dev/null || true
-fi
-if git rev-parse --verify -q gh-pages >/dev/null 2>&1; then
-  git worktree add "$FEED_REPO_DIR" gh-pages
+# 用独立 clone 而非 worktree，避免与其它发布目录的分支占用冲突
+if [ -d "$FEED_REPO_DIR/.git" ]; then
+  git -C "$FEED_REPO_DIR" fetch origin gh-pages
+  git -C "$FEED_REPO_DIR" reset --hard origin/gh-pages
+elif git ls-remote --heads origin gh-pages | grep -q gh-pages; then
+  git clone --branch gh-pages --single-branch "https://github.com/$REPO.git" "$FEED_REPO_DIR"
 else
   git worktree add --orphan -b gh-pages "$FEED_REPO_DIR"
   (cd "$FEED_REPO_DIR" && git rm -rf . >/dev/null 2>&1 || true)
