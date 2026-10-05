@@ -30,6 +30,7 @@
 		56A510CEE0C2F35EA9DDC9A0 /* Workspace+Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC84FE20936F027185C1EE /* Workspace+Files.swift */; };
 		5B35848E0E80B6C00512614F /* Workspace+Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FA4E5543FA615A79C6289B /* Workspace+Close.swift */; };
 		5E551374D9E2F45E485429BD /* TXTForMacFinder.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A7A1BC86C05D1C03D7586843 /* TXTForMacFinder.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A83CF72AD37C2044C13D7BA /* OpenRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FF4D4CF2D4F6FAE038DF8 /* OpenRequestQueue.swift */; };
 		6C4B059880F6B039EE88C1E3 /* DocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE56641E92921B01ED0DA9 /* DocumentStore.swift */; };
 		76F4D4A0D3E2E9F5210C64AE /* SettingsSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA814458D884384A65D0761 /* SettingsSchema.swift */; };
 		7749F8DEEE817E7CD9348482 /* TextEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB78511083C65F4EED392A59 /* TextEncoding.swift */; };
@@ -107,6 +108,7 @@
 		208FD486F76029D50A971649 /* UpdaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdaterService.swift; sourceTree = "<group>"; };
 		214F774DF9F323B846C9F363 /* LineEnding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineEnding.swift; sourceTree = "<group>"; };
 		2F507D3AFDFC4A0ED2BA0780 /* LineEndingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineEndingTests.swift; sourceTree = "<group>"; };
+		396FF4D4CF2D4F6FAE038DF8 /* OpenRequestQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRequestQueue.swift; sourceTree = "<group>"; };
 		3EEC5E12A6321E8DAC41CC72 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
 		4180C35F8F3F40EDF25DCCAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4C4DA0FD8F0EA390E004A385 /* TXTForMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTForMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -315,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				D6131E781CD68498F31FB689 /* AppCommands.swift */,
+				396FF4D4CF2D4F6FAE038DF8 /* OpenRequestQueue.swift */,
 				184F11E15C1F58232F7B97D6 /* TXTForMacApp.swift */,
 				794509BC71163BC7664AB491 /* WindowRootView.swift */,
 				DF804B0DA5AF9405ADCED1C7 /* Workspace.swift */,
@@ -503,6 +506,7 @@
 				4AA04A9F017E650672710820 /* FindBarView.swift in Sources */,
 				27E0A1113878234F3813DD9E /* LineEnding.swift in Sources */,
 				BFA2EC9B5D5CF41304430D0A /* LocalizationService.swift in Sources */,
+				6A83CF72AD37C2044C13D7BA /* OpenRequestQueue.swift in Sources */,
 				D636CE7604CE7BA7B7658598 /* SaveOptions.swift in Sources */,
 				42B9E5B6715F93426391ECCA /* SessionStore.swift in Sources */,
 				92B9D71DC0DC7C2237A52880 /* SettingsRootView.swift in Sources */,

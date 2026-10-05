@@ -19,7 +19,7 @@ if [ -z "$VERSION" ]; then
   exit 1
 fi
 
-DERIVED_ROOT="${TXTFORMAC_DERIVED:-$HOME/Library/Caches/txtformac-dd}"
+DERIVED_ROOT="${TXTFORMAC_DERIVED:-$HOME/Library/Developer/txtformac-dd}"
 DERIVED="$DERIVED_ROOT/release-$VERSION"
 TOOLS="$ROOT/.tmp/sparkle/bin"
 SPARKLE_ED_KEY_FILE="${SPARKLE_ED_KEY_FILE:-$HOME/.config/txtformac/sparkle_ed25519.file}"

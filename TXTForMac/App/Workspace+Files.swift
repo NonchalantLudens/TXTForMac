@@ -19,6 +19,14 @@ extension Workspace {
 
     func open(url: URL) {
         noteRecentFile(at: url)
+        // 同一文件已打开时只切换到对应标签（去重）
+        if let existing = store.documents.first(where: {
+            $0.fileURL?.standardizedFileURL.path == url.standardizedFileURL.path
+        }) {
+            store.select(existing)
+            refreshStatusMetrics()
+            return
+        }
         do {
             let loaded = try FileIOService.read(
                 at: url,

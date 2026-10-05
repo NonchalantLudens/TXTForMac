@@ -50,6 +50,7 @@ struct WindowRootView: View {
         .onAppear {
             workspace.startAutosave()
             workspace.restoreSessionIfNeeded()
+            OpenRequestQueue.shared.drain(into: workspace)
         }
         .onChange(of: localization.language) { _ in
             workspace.refreshStatusMetrics()

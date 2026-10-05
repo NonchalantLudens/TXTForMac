@@ -18,8 +18,14 @@ final class WorkspaceRegistry {
     }
 
     var active: Workspace? {
-        guard let keyWindow = NSApp.keyWindow ?? NSApp.mainWindow else { return nil }
-        return map.object(forKey: keyWindow) ?? all.first
+        if let keyWindow = NSApp.keyWindow, let workspace = map.object(forKey: keyWindow) {
+            return workspace
+        }
+        if let mainWindow = NSApp.mainWindow, let workspace = map.object(forKey: mainWindow) {
+            return workspace
+        }
+        // 冷启动时窗口尚未成为 key/main，但注册表里已有工作区
+        return all.first
     }
 
     var all: [Workspace] {

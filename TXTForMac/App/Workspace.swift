@@ -1,4 +1,5 @@
 import AppKit
+import os
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -11,6 +12,11 @@ import UniformTypeIdentifiers
 final class Workspace: NSObject {
     let store = DocumentStore()
     let settings: SettingsStore
+
+    static let logger = Logger(
+        subsystem: "online.nonchalantludens.txtformac",
+        category: "Workspace"
+    )
     let coordinator = EditorCoordinator()
 
     // MARK: 状态栏数据（T-014）
@@ -83,6 +89,7 @@ final class Workspace: NSObject {
     /// 记录最近文件（T-024）：去重、上限来自设置。
     func noteRecentFile(at url: URL) {
         let path = url.path
+        Self.logger.notice("记录最近文件：\(path, privacy: .public)")
         settings.update { settings in
             var recents = settings.recentFiles.filter { $0 != path }
             recents.insert(path, at: 0)
