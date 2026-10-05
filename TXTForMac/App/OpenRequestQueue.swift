@@ -24,8 +24,11 @@ final class OpenRequestQueue {
     /// 冷启动竞态兜底：窗口/工作区未就绪时保留队列，按间隔重试直至打开。
     private func scheduleRetryIfNeeded(attempt: Int = 1) {
         guard !pending.isEmpty, attempt <= 20 else {
-            if attempt > 20, !pending.isEmpty {
-                logger.error("打开请求重试超限，仍有 \(pending.count) 个待打开文件")
+            if attempt > 20 {
+                let remaining = pending.count
+                if remaining > 0 {
+                    logger.error("打开请求重试超限，仍有 \(remaining) 个待打开文件")
+                }
             }
             return
         }

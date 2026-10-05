@@ -1,5 +1,7 @@
 # SwiftFormat 配置 —— macOS 栈约束 S8 要求零 error。
+# redundantSelf 会剥掉严格并发下闭包必需的 self.（曾在 OpenRequestQueue 引发 Release 编译失败），永久禁用。
 --swiftversion 6.0
 --indent 4
 --maxwidth 120
+--disable redundantSelf
 --exclude build,DerivedData,.build
